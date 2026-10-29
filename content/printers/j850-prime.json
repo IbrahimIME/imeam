@@ -1,0 +1,14 @@
+{
+  "name": "J850 Prime",
+  "technology": "polyjet",
+  "applications": [
+    "prototyping",
+    "design"
+  ],
+  "order": 100,
+  "summary": "Multi-material, full-colour PolyJet for realistic prototypes and design models.",
+  "image": "/assets/stratasys/j850-prime.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

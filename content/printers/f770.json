@@ -1,0 +1,14 @@
+{
+  "name": "F770",
+  "technology": "fdm",
+  "applications": [
+    "tooling",
+    "prototyping"
+  ],
+  "order": 30,
+  "summary": "Large-format FDM for long parts, fixtures and full-size prototypes.",
+  "image": "/assets/stratasys/f770.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

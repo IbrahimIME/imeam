@@ -1,0 +1,14 @@
+{
+  "name": "J850 Pro",
+  "technology": "polyjet",
+  "applications": [
+    "prototyping",
+    "design"
+  ],
+  "order": 80,
+  "summary": "Multi-material, full-colour PolyJet for design validation and realistic prototypes.",
+  "image": "/assets/stratasys/j850-pro.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

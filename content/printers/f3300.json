@@ -1,0 +1,166 @@
+{
+  "name": "F3300",
+  "technology": "fdm",
+  "applications": [
+    "production",
+    "tooling"
+  ],
+  "order": 10,
+  "summary": "High-speed industrial FDM: Stratasys says it prints up to twice as fast as competing platforms. 600 × 600 × 800 mm build.",
+  "image": "/assets/stratasys/f3300.webp",
+  "image_alt": "",
+  "new": true,
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "F3300 Industrial FDM",
+    "description": "Stratasys F3300 industrial FDM 3D printer from IME Additive Manufacturing, Malaysia.",
+    "video": "/assets/video/f3300.mp4",
+    "hero_image": "/assets/stratasys/f3300-close-up.webp",
+    "category": "Industrial",
+    "eyebrow": "Stratasys F3300 · Industrial FDM",
+    "headline": "Faster throughput.",
+    "headline_em": "Minimal labour. Lower cost.",
+    "lead": "Stratasys says the F3300 prints up to twice as fast as competing extrusion platforms. It has four extruders, autocalibration and onboard material dryers, so it can run predictable production around the clock.",
+    "spec_sheet": "https://www.stratasys.com/en/3d-printers/printer-catalog/fdm-printers/f3300-printer/",
+    "facts": [
+      {
+        "value": "600×600×800",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "4",
+        "label": "Spool bays · extruders"
+      },
+      {
+        "value": "±0.089",
+        "label": "XY accuracy, mm*"
+      },
+      {
+        "value": "2×",
+        "label": "Print speed vs competitors†"
+      }
+    ],
+    "footnote": "* or ±0.0015 mm/mm, whichever is greater. † Stratasys claim. Source: stratasys.com F3300 page, read 16 Oct 2026.",
+    "features_heading": "Engineered for the factory, not the lab.",
+    "features": [
+      {
+        "title": "Faster gantry speeds",
+        "text": "Faster point-to-point material deposition cuts time-to-part."
+      },
+      {
+        "title": "Multiple extruders",
+        "text": "Redundancy for higher reliability, and no idle time from single-extruder thermal cycling."
+      },
+      {
+        "title": "Autocalibration",
+        "text": "No manual calibration after a material change."
+      },
+      {
+        "title": "Multi-resolution printing",
+        "text": "Small and large bead thicknesses in the same job to finish parts sooner."
+      },
+      {
+        "title": "Faster extrusion",
+        "text": "New extruder technology for higher throughput."
+      }
+    ],
+    "feature_image": "/assets/stratasys/f3300-close-up.webp",
+    "feature_image_alt": "F3300 printer close-up",
+    "feature_caption": "F3300 · Stratasys",
+    "benefits": [
+      {
+        "title": "Lower cost per part",
+        "text": "Faster printing, more efficient material use and higher part yield."
+      },
+      {
+        "title": "Up to 2× throughput",
+        "text": "Prints up to twice the rate of other extrusion systems (Stratasys claim)."
+      },
+      {
+        "title": "Production reliability",
+        "text": "Predictable performance and part yield on the factory floor."
+      },
+      {
+        "title": "Less labour",
+        "text": "Ease of use, including autocalibration, cuts operator time."
+      }
+    ],
+    "specs_heading": "F3300 at a glance",
+    "specs": [
+      {
+        "label": "Description",
+        "value": "High-speed industrial 3D printer. Benchmark FDM® reliability and quality, with up to twice the print speed of competitive platforms."
+      },
+      {
+        "label": "Material delivery",
+        "value": "4 material spool bays feeding 4 extruders; mix-and-match model or support; independently controlled onboard material dryers (120 °C max)"
+      },
+      {
+        "label": "Build size",
+        "value": "600 × 600 × 800 mm (23.6 × 23.6 × 31.5 in.)"
+      },
+      {
+        "label": "Accuracy",
+        "value": "XY ±0.089 mm or ±0.0015 mm/mm, whichever is greater. Z ±0.200 mm or ±0.002 mm/mm, plus 1 layer height"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, GrabCAD Print Pro, Insight, MTConnect enabled"
+      },
+      {
+        "label": "Network",
+        "value": "10/100 Base T, Ethernet, RJ45, IPv6"
+      },
+      {
+        "label": "System size & weight",
+        "value": "203.2 × 162.6 × 236.2 cm with light tower · 1,360 kg"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "15–30 °C, 20–80 % RH non-condensing"
+      },
+      {
+        "label": "Power",
+        "value": "208 V, 3-phase, 30 A dedicated circuit, 50/60 Hz, 5-wire"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE (Machinery Directive & EMC) 2006/42/EC, cTUVus, FCC Part B"
+      }
+    ],
+    "applications_image": "/assets/stratasys/3d-printing-solutions-for-automotive-manufacturing.webp",
+    "applications_heading": "Prototypes, tooling and production parts on one platform.",
+    "applications_text": "Used in automotive, aerospace, rail, medical and general manufacturing, where speed, reliability and cost efficiency matter.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Durable functional prototypes in production thermoplastics."
+      },
+      {
+        "image": "/assets/stratasys/automotive-bumper-on-paint-line-with-3d-printed-masking-tool.webp",
+        "title": "Manufacturing tooling",
+        "text": "Jigs, fixtures and masking tools without machining lead times."
+      },
+      {
+        "image": "/assets/stratasys/jw-speaker-custom-motorcycle-headlight-3d-printed-housing.webp",
+        "title": "Production parts",
+        "text": "Cost-effective low-volume and bridge-to-production parts."
+      }
+    ],
+    "compare_heading": "Other industrial FDM systems",
+    "compare": [
+      "f900",
+      "f770",
+      "f870"
+    ],
+    "pricing_heading": "Get F3300 pricing and expert guidance.",
+    "pricing_text": "Talk to an FDM specialist about your application. We’ll walk through pricing and a test print of your own part at AMIC.",
+    "form_options": [
+      "Production parts",
+      "Tooling, jigs & fixtures",
+      "Prototyping"
+    ]
+  }
+}

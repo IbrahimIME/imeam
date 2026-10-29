@@ -1,0 +1,13 @@
+{
+  "name": "DentaJet series",
+  "technology": "polyjet",
+  "applications": [
+    "dental"
+  ],
+  "order": 170,
+  "summary": "J3, J5 DentaJet and DentaJet XL: multi-material dental lab production.",
+  "image": "/assets/stratasys/j5-dentajet.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

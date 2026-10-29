@@ -1,0 +1,14 @@
+{
+  "name": "J826 Prime",
+  "technology": "polyjet",
+  "applications": [
+    "prototyping",
+    "design"
+  ],
+  "order": 110,
+  "summary": "Full-colour, multi-material PolyJet for design validation and prototypes.",
+  "image": "/assets/stratasys/j826.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

@@ -1,0 +1,36 @@
+# IME Additive Manufacturing – Netlify configuration
+# Builds dist/ from site/, the shared header/footer (partials/) and the CMS content (content/)
+[build]
+  command = "node build.js"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Security headers for every page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+# Long cache for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Decap CMS admin: keep out of search engines and always load the latest config
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-cache"
+
+# The F3300 page used to be printer.html; product pages are now printer-<name>.html (content/printers)
+[[redirects]]
+  from = "/printer.html"
+  to = "/printer-f3300.html"
+  status = 301

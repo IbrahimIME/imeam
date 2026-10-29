@@ -1,0 +1,14 @@
+{
+  "name": "ime-am-site",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "cms": "npx decap-server@3.11.5"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "marked": "18.1.1"
+  }
+}

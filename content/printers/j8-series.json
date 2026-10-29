@@ -1,0 +1,14 @@
+{
+  "name": "J8 Series",
+  "technology": "polyjet",
+  "applications": [
+    "prototyping",
+    "design"
+  ],
+  "order": 90,
+  "summary": "Full-colour, multi-material PolyJet realism for design teams.",
+  "image": "/assets/stratasys/j8-series.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

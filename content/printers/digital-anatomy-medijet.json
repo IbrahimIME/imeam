@@ -1,0 +1,13 @@
+{
+  "name": "Digital Anatomy · MediJet",
+  "technology": "polyjet",
+  "applications": [
+    "medical"
+  ],
+  "order": 160,
+  "summary": "J850 and J5 Digital Anatomy and J5 MediJet: anatomical models that look and feel like real tissue.",
+  "image": "/assets/stratasys/j850-digital-anatomy-printer.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

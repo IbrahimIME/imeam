@@ -1,0 +1,8 @@
+{
+  "name": "ABS-ESD7",
+  "technology": "fdm",
+  "tags": [
+    "ESD-safe"
+  ],
+  "draft": false
+}

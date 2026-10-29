@@ -1,0 +1,14 @@
+{
+  "name": "J55 Prime",
+  "technology": "polyjet",
+  "applications": [
+    "design",
+    "education"
+  ],
+  "order": 130,
+  "summary": "Office-friendly full-colour 3D printer with high fidelity and tactile finishes.",
+  "image": "/assets/stratasys/j55-prime.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

@@ -1,0 +1,297 @@
+# Decap CMS configuration. Editors sign in at /admin/ with Netlify Identity;
+# every save is a commit to the repo, which triggers a Netlify build (build.js).
+# Collection folders must match build.js: TYPES (resources), TECH and PRINTER_FILTERS (printers, materials).
+backend:
+  name: git-gateway
+  branch: main
+
+# `npx decap-server` in the repo root lets you edit content locally at http://localhost:8888/admin/
+local_backend: true
+
+# Media root is site/assets so existing images (assets/stratasys/…) preview in the editor;
+# each image/file field uploads to site/assets/uploads (its media_folder/public_folder).
+media_folder: site/assets
+public_folder: /assets
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  # Homepage "Printers" grid; a printer with "Product page" on also gets printer-<file name>.html
+  - name: printers
+    label: Printers
+    label_singular: Printer
+    folder: content/printers
+    extension: json
+    format: json
+    create: true
+    delete: true
+    identifier_field: name
+    slug: "{{slug}}"
+    summary: "{{name}} · {{technology}}"
+    sortable_fields: [order, name, technology]
+    view_groups:
+      - { label: Technology, field: technology }
+    fields:
+      - { name: name, label: Name, widget: string, hint: "As shown on the card, e.g. F3300 or J850 Pro." }
+      - name: technology
+        label: Technology
+        widget: select
+        options: &tech
+          - { label: FDM, value: fdm }
+          - { label: PolyJet, value: polyjet }
+          - { label: P3 DLP, value: p3 }
+          - { label: SAF, value: saf }
+          - { label: SLA, value: sla }
+      - name: applications
+        label: Filters
+        widget: select
+        multiple: true
+        required: false
+        hint: Homepage filter buttons this printer appears under (Design and Education have no button yet).
+        options:
+          - { label: Production, value: production }
+          - { label: Tooling, value: tooling }
+          - { label: Prototyping, value: prototyping }
+          - { label: Medical, value: medical }
+          - { label: Dental, value: dental }
+          - { label: Design, value: design }
+          - { label: Education, value: education }
+      - { name: order, label: Order, widget: number, value_type: int, default: 100, hint: Lower numbers come first in the grid. }
+      - { name: summary, label: Card text, widget: text }
+      - { name: image, label: Image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, hint: Product photo on a white background (WebP or PNG). }
+      - { name: image_alt, label: Image description, widget: string, required: false, hint: "Leave empty for “Stratasys <name> 3D printer”." }
+      - { name: new, label: Show “New to IME site” badge, widget: boolean, default: false }
+      - { name: draft, label: Hidden, widget: boolean, default: false, hint: Keep the entry but leave it off the website. }
+      - name: page
+        label: Product page
+        widget: object
+        collapsed: true
+        required: false
+        summary: "{{fields.page_title}}"
+        fields:
+          - { name: enabled, label: Publish a product page, widget: boolean, default: false, hint: "Turns the card into a link to printer-<file name>.html. Empty fields below use sensible defaults; empty Features, Specifications or Applications sections are left out." }
+          - { name: page_title, label: Page title, widget: string, required: false, hint: "Browser tab and search results, e.g. F3300 Industrial FDM." }
+          - { name: description, label: Search description, widget: text, required: false }
+          - { name: category, label: Category, widget: string, required: false, hint: "Breadcrumb after the technology, e.g. Industrial." }
+          - { name: eyebrow, label: Eyebrow, widget: string, required: false, hint: "Small line above the headline, e.g. Stratasys F3300 · Industrial FDM." }
+          - { name: headline, label: Headline, widget: string, required: false }
+          - { name: headline_em, label: Headline (highlighted part), widget: string, required: false }
+          - { name: lead, label: Intro, widget: text, required: false }
+          - { name: hero_image, label: Hero background image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false }
+          - { name: video, label: Hero background video, widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: Short silent MP4 loop. }
+          - { name: spec_sheet, label: Spec sheet, widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: "Upload a PDF, or choose “Insert from URL”." }
+          - name: facts
+            label: Key facts
+            widget: list
+            required: false
+            summary: "{{fields.value}} {{fields.label}}"
+            fields:
+              - { name: value, label: Value, widget: string, hint: "e.g. 600×600×800" }
+              - { name: label, label: Label, widget: string, hint: "e.g. Build size, mm" }
+          - { name: footnote, label: Footnote, widget: text, required: false, hint: Sources and claims for the key facts. }
+          - { name: features_heading, label: Features heading, widget: string, required: false }
+          - name: features
+            label: Features
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            fields: &svc
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - { name: feature_image, label: Features image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false }
+          - { name: feature_image_alt, label: Features image description, widget: string, required: false }
+          - { name: feature_caption, label: Features image caption, widget: string, required: false }
+          - { name: benefits, label: Benefits, widget: list, required: false, summary: "{{fields.title}}", fields: *svc }
+          - { name: specs_heading, label: Specifications heading, widget: string, required: false }
+          - name: specs
+            label: Specifications
+            widget: list
+            required: false
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: Specification, widget: string }
+              - { name: value, label: Value, widget: text }
+          - { name: applications_heading, label: Applications heading, widget: string, required: false }
+          - { name: applications_text, label: Applications intro, widget: text, required: false }
+          - { name: applications_image, label: Applications banner image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false }
+          - name: applications
+            label: Applications
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - { name: image, label: Image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false }
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - { name: compare_heading, label: Compare heading, widget: string, required: false }
+          - name: compare
+            label: Compare with
+            widget: relation
+            collection: printers
+            value_field: "{{slug}}"
+            search_fields: [name]
+            display_fields: [name]
+            multiple: true
+            required: false
+            hint: Leave empty to show up to three other printers of the same technology.
+          - { name: pricing_heading, label: Pricing heading, widget: string, required: false }
+          - { name: pricing_text, label: Pricing text, widget: text, required: false }
+          - { name: form_options, label: Enquiry form applications, widget: list, required: false, hint: "Choices in the form’s Application list. Default: Production parts, Tooling, jigs & fixtures, Prototyping." }
+
+  # materials.html catalogue
+  - name: materials
+    label: Materials
+    label_singular: Material
+    folder: content/materials
+    extension: json
+    format: json
+    create: true
+    delete: true
+    identifier_field: name
+    slug: "{{slug}}"
+    summary: "{{name}} · {{technology}}"
+    sortable_fields: [name, technology]
+    view_groups:
+      - { label: Technology, field: technology }
+    fields:
+      - { name: name, label: Name, widget: string }
+      - { name: technology, label: Technology, widget: select, options: *tech }
+      - name: tags
+        label: Tags
+        widget: select
+        multiple: true
+        required: false
+        options: [High-performance, Fibre-filled, Flexible, Clear, ESD-safe, Flame-retardant, Medical, Support]
+      - { name: draft, label: Hidden, widget: boolean, default: false, hint: Keep the entry but leave it off the website. }
+
+  - name: case-studies
+    label: Case Studies
+    label_singular: Case Study
+    folder: content/case-studies
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    view_filters:
+      - { label: Featured on homepage, field: featured, pattern: true }
+      - { label: Hidden, field: draft, pattern: true }
+    fields: &fields
+      - { name: title, label: Title, widget: string }
+      - name: date
+        label: Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: DD MMM YYYY
+        time_format: false
+        required: false
+        hint: Leave empty for undated resources (shown as "<Source> resource").
+      - { name: source, label: Source, widget: string, default: IME, hint: "Shown before the date, e.g. IME or Stratasys." }
+      - { name: summary, label: Summary, widget: text, required: false, hint: One or two sentences for cards and search results. }
+      - { name: image, label: Cover image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: Landscape image (16:10 crop on cards). WebP or JPG. }
+      - { name: featured, label: Show on homepage, widget: boolean, default: false, hint: The six newest featured resources appear in the homepage Resources section. }
+      - { name: draft, label: Hidden, widget: boolean, default: false, hint: Keep the entry but leave it off the website. }
+      - name: link
+        label: External link
+        widget: string
+        required: false
+        pattern: ['^(https?://.+)?$', 'Must start with http:// or https://']
+        hint: Optional. Used as the card link when there is no article body or file.
+      - { name: file, label: Download (PDF), widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: "eBooks, white papers, spec sheets and SDS: upload the PDF here." }
+      - { name: video, label: Video, widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: "Upload an MP4, or choose “Insert from URL” for a YouTube or Vimeo link." }
+      - { name: body, label: Article, widget: markdown, required: false, hint: Optional. When filled, the resource gets its own page on the site. }
+
+  - name: webinars
+    label: Webinars
+    label_singular: Webinar
+    folder: content/webinars
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields: *fields
+
+  - name: blog
+    label: Blog
+    label_singular: Blog post
+    folder: content/blog
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields: *fields
+
+  - name: ebooks
+    label: eBooks
+    label_singular: eBook
+    folder: content/ebooks
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields: *fields
+
+  - name: white-papers
+    label: White Papers
+    label_singular: White Paper
+    folder: content/white-papers
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields: *fields
+
+  - name: videos
+    label: Videos
+    label_singular: Video
+    folder: content/videos
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields: *fields
+
+  - name: spec-sheets
+    label: Spec Sheets
+    label_singular: Spec Sheet
+    folder: content/spec-sheets
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields: *fields
+
+  - name: safety-data-sheets
+    label: Safety Data Sheets
+    label_singular: Safety Data Sheet
+    folder: content/safety-data-sheets
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields: *fields

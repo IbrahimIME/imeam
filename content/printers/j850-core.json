@@ -1,0 +1,14 @@
+{
+  "name": "J850 Core",
+  "technology": "polyjet",
+  "applications": [
+    "prototyping",
+    "design"
+  ],
+  "order": 120,
+  "summary": "Multi-material PolyJet system in the J850 family.",
+  "image": "/assets/stratasys/j850-core.webp",
+  "image_alt": "",
+  "new": true,
+  "draft": false
+}

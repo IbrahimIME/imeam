@@ -1,0 +1,13 @@
+{
+  "name": "H350",
+  "technology": "saf",
+  "applications": [
+    "production"
+  ],
+  "order": 190,
+  "summary": "SAF powder bed fusion for cost-efficient, higher-volume production of nylon parts.",
+  "image": "/assets/stratasys/saf.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

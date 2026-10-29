@@ -1,0 +1,14 @@
+{
+  "name": "Fortus 450mc",
+  "technology": "fdm",
+  "applications": [
+    "production",
+    "tooling"
+  ],
+  "order": 50,
+  "summary": "Industrial FDM for high-performance thermoplastics. Unlocks open parameters with OpenAM.",
+  "image": "/assets/stratasys/fortus-450mc.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

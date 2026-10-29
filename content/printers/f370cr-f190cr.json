@@ -1,0 +1,14 @@
+{
+  "name": "F370CR · F190CR",
+  "technology": "fdm",
+  "applications": [
+    "tooling",
+    "prototyping"
+  ],
+  "order": 60,
+  "summary": "Composite-ready office FDM for strong carbon-fibre-filled parts.",
+  "image": "/assets/stratasys/f370cr.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

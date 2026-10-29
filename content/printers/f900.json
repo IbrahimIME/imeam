@@ -1,0 +1,14 @@
+{
+  "name": "F900",
+  "technology": "fdm",
+  "applications": [
+    "production",
+    "tooling"
+  ],
+  "order": 20,
+  "summary": "Large-build industrial FDM for production parts, tooling and big prototypes.",
+  "image": "/assets/stratasys/f900.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Origin Two",
+  "technology": "p3",
+  "applications": [
+    "production"
+  ],
+  "order": 180,
+  "summary": "P3 DLP for production parts with repeatable accuracy, tight tolerances and injection-moulding-like finish.",
+  "image": "/assets/stratasys/origin-two.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

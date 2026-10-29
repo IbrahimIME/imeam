@@ -1,0 +1,14 @@
+{
+  "name": "Neo800+ · Neo450s",
+  "technology": "sla",
+  "applications": [
+    "prototyping",
+    "tooling"
+  ],
+  "order": 200,
+  "summary": "Large-format SLA for accurate prototypes, wind-tunnel models and casting patterns. Neo450s: 450 × 450 × 400 mm.",
+  "image": "/assets/stratasys/neo800.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}

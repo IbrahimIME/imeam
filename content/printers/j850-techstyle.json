@@ -1,0 +1,13 @@
+{
+  "name": "J850 TechStyle",
+  "technology": "polyjet",
+  "applications": [
+    "design"
+  ],
+  "order": 150,
+  "summary": "PolyJet printing directly onto textiles for fashion and soft goods.",
+  "image": "/assets/stratasys/j850-techstyle.webp",
+  "image_alt": "",
+  "new": true,
+  "draft": false
+}

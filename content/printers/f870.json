@@ -1,0 +1,14 @@
+{
+  "name": "F870",
+  "technology": "fdm",
+  "applications": [
+    "production",
+    "tooling"
+  ],
+  "order": 40,
+  "summary": "Industrial FDM platform for manufacturing environments.",
+  "image": "/assets/stratasys/f870-1.webp",
+  "image_alt": "",
+  "new": true,
+  "draft": false
+}

@@ -1,0 +1,14 @@
+{
+  "name": "F170 · F370",
+  "technology": "fdm",
+  "applications": [
+    "prototyping",
+    "education"
+  ],
+  "order": 70,
+  "summary": "Office-friendly FDM for everyday engineering prototypes.",
+  "image": "/assets/stratasys/f370.webp",
+  "image_alt": "",
+  "new": false,
+  "draft": false
+}
