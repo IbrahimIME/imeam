@@ -1,0 +1,13 @@
+{
+  "title": "Overview of 3D Printing",
+  "date": "2014-04-15",
+  "source": "IME",
+  "summary": "Before we go into the secrets of 3D printing, let's have a quick understanding of what 3D printing is:",
+  "image": "/assets/uploads/blog/overview-of-3d-printing-5-secrets-e1397535839573.webp",
+  "featured": false,
+  "draft": false,
+  "link": "",
+  "file": "",
+  "video": "",
+  "body": "Before we go into the secrets of 3D printing, let's have a quick understanding of what 3D printing is:\n\n> It is known as additive manufacturing technology. The essence of this technology lies in printing layer-by-layer. Think of it as lego where you build something piece by piece.\n\nNow we have a basic understanding of how it works, it is time to reveal the five main uses of 3D printing.\n\n##### **#1 - Idea Realisation**\n\nThink of it this way, there is a design issue which you wish to rectify but you're stuck at design validation. Simple, now you can just 3D Print it. Look what they did for [Emma](http://www.youtube.com/watch?v=WoZ2BgPVtA0).\n\n##### **#2 - Precision for Functionality**\n\nThe functional clock below is 3D Printed in a single build. No post assembly needed.\n\n##### **#3 - Cost Effective For Small Productions**\n\nConventional method may cost up to ten thousands for small production tooling. 3D printing can save up to 80% of cost reduction, yet faster production time as it skips many post-processes.\n\n##### **#4 - Prototyping to End-Use-Parts**\n\nTrek - a bicycle manufacturer has used 3D printer for design validation, which you can view [here](http://www.youtube.com/watch?v=eZZZ3pmEYFU). Even big players in aerospace & automotive industries are also 3D printing parts for end-use assembly.\n\n##### **#5 - More than Plastics (ABS)**\n\nIt is not only digital ABS, we have materials ranging from transclucent to rubber-like materials, or even bio compatible materials. You can view it [here](https://rapidmodel.com.my/materials/).\n\nWe have also covered why different applications require different technology, which you can refer here: [Polyjet](https://rapidmodel.com.my/3d-printing-polyjet-technology/) and [FDM](blog-3d-printing-with-fdm-technology.html) technology."
+}

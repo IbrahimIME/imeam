@@ -1,0 +1,13 @@
+{
+  "title": "Wind Tunnel Testing with 3D Printed Aeroplane",
+  "date": "2014-10-10",
+  "source": "IME",
+  "summary": "Wind tunnel test is an integral part of the design process in many industries, especially for aerospace. This is used to verify and study the aerodynamic properties of solid objects such as air…",
+  "image": "/assets/uploads/blog/3d-printed-aeroplane-wind-tunnel-test-3d-printed-aeroplane-assembled-3.webp",
+  "featured": false,
+  "draft": false,
+  "link": "",
+  "file": "",
+  "video": "",
+  "body": "Wind tunnel test is an integral part of the design process in many industries, especially for aerospace. This is used to verify and study the aerodynamic properties of solid objects such as air velocity and pressure.\n\nTraditionally, concept model made for wind tunnel testing relied heavily on CNC machining. Common materials are metal, plastics and compisites. These operations require programming, machine setup, operator supervision which adds to lead time and cost.\n\nThis is where 3D printing comes in. The printed concept model is durable, yet faster, less expensive and more efficient. This is especially useful when it comes to doing hollow printing to simulate internal passages where this would complicate the CNC milling process. Embedding testing equipment into the model is also accessible with 3D printing.\n\n**Here is the file source & technology we used:**\n\n**File Source:** Client  \n**Technology:** Polyjet  \n**Printer:** [Design Series - Objet30 Pro](http://www.rapidmodel.com.my/portfolio-item/objet30-pro/ \"objet30\")  \n**Materials:** Vero White  \n**Build Time:** 4 hours\n\n**Outcome:**\n\n![3D Printed Aeroplane](/assets/uploads/blog/3d-printed-aeroplane-wind-tunnel-test-3d-printed-aeroplane-assembled-5.webp)\n\n*3D Printed Aeroplane for Wind Tunnel Testing.*\n\n**Implications:**\n\n- In comparison with traditional manufacturing method, 3D printing this concept model will only take a fraction of the original cost in terms of lead time and money.\n- Having more time allows more refinement/improvement to happen. The potential for improvements is bigger as we take shorter time to produce concept model for testing purposes.\n- Another important factor is the availability of model material. Aerospace and automotive industry in particular study about how weight reduction can assist in overall efficiency. Light weight material from Polyjet machine is able to simulate such environment for a better study result."
+}

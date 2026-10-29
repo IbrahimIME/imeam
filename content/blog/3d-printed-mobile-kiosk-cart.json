@@ -1,0 +1,13 @@
+{
+  "title": "Concept Model for Mobile Kiosk Cart",
+  "date": "2014-10-02",
+  "source": "IME",
+  "summary": "When was the last time you \"tapau\" food from a mobile kiosk? These mobile kiosks are getting immensely popular especially in colleges and universities.",
+  "image": "/assets/uploads/blog/3d-printed-mobile-kiosk-cart-3d-printed-kiosk-11-6.webp",
+  "featured": false,
+  "draft": false,
+  "link": "",
+  "file": "",
+  "video": "",
+  "body": "When was the last time you \"tapau\" food from a mobile kiosk? These mobile kiosks are getting immensely popular especially in colleges and universities.\n\nThis time, we 3D printed a novel mobile food kiosk for concept modelling. It was designed by an architecture student in Taylor's University and wanted to see how it will look like - *physically.*\n\n**Here is the file source & technology we used:**\n\n**File Source:** Client  \n**Technology:** FDM  \n**Printer:** [Idea Series - uPrint SE Plus](http://www.rapidmodel.com.my/portfolio-item/uprint-se/ \"uPrint\")  \n**Materials:** ABSPlus-P430 Black, ABSPlus-P430 Grey  \n**Build Time:** 32 hours (we printed this in 3 batches for assembly purposes)\n\n**Outcome:**\n\n![3D Printed Mobile Kiosk Cart](/assets/uploads/blog/3d-printed-mobile-kiosk-cart-3d-printed-kiosk-11-6.webp)\n\n*3D Printed Mobile Kiosk Cart, looks pretty cool eh?*\n\n**Implications:**\n\n- For concept modelling and upon request, this was printed in pieces for assembly to study the design & precision printing. Of course if needed, this can be built in a single print.\n- As this will be detached and reassembled for quite a number of times, we printed this in FDM so it will be more durable.\n\nWe're excited to see new mobile kiosks design coming up and hope that this will breathe a new life into architecture design!"
+}

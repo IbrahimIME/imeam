@@ -26,7 +26,7 @@ const CONTENT = path.join(ROOT, 'content');
 const TYPES = [
   { dir: 'case-studies', page: 'case-study', label: 'Case studies', one: 'Case study' },
   { dir: 'webinars', page: 'webinar', label: 'Webinars', one: 'Webinar' },
-  { dir: 'blog', page: 'blog', label: 'Blog', one: 'Blog' },
+  { dir: 'blog', page: 'blog', label: 'Blog', one: 'Blog', more: 'More blog posts' },
   { dir: 'ebooks', page: 'ebook', label: 'eBooks', one: 'eBook' },
   { dir: 'white-papers', page: 'white-paper', label: 'White papers', one: 'White paper' },
   { dir: 'videos', page: 'video', label: 'Videos', one: 'Video' },
@@ -171,7 +171,7 @@ function detailPage(e, markdown) {
   const btns = [];
   if (e.file) btns.push(`<a class="btn ar" href="${esc(e.file)}" target="_blank" rel="noopener">Download PDF </a>`);
   if (e.link) btns.push(`<a class="btn${e.file ? ' ghost' : ''}" href="${esc(e.link)}"${isExternal(e.link) ? ' target="_blank" rel="noopener"' : ''}>Read more ↗</a>`);
-  btns.push(`<a class="btn ghost" href="resources.html#${e.type.dir}">More ${esc(e.type.label)}</a>`);
+  btns.push(`<a class="btn ghost" href="resources.html#${e.type.dir}">${esc(e.type.more || `More ${e.type.label}`)}</a>`);
   const vid = e.video && videoEmbed(e.video, e.title);
   if (e.video && !vid) btns.splice(btns.length - 1, 0, `<a class="btn ghost" href="${esc(e.video)}" target="_blank" rel="noopener">Watch video ↗</a>`);
   const inner = `<div class="kline">${esc(e.type.one)}<i></i></div><h1 class="h2">${esc(e.title)}</h1><p class="res-meta">${esc(meta(e))}</p>

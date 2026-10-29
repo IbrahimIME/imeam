@@ -1,0 +1,13 @@
+{
+  "title": "We Printed A Spectacle For Colleague",
+  "date": "2014-08-27",
+  "source": "IME",
+  "summary": "Lots of people have been asking - do you have transparent material? So this round we decided to print something unique - spectacles.",
+  "image": "/assets/uploads/blog/3d-printed-spectacles-20140825-102451-1024x768.webp",
+  "featured": false,
+  "draft": false,
+  "link": "",
+  "file": "",
+  "video": "",
+  "body": "Lots of people have been asking - do you have transparent material? So this round we decided to print something unique - spectacles.\n\nBelow is some information on file source & technology we used:  \n**File Source:** Rapid Model Development Sdn Bhd  \n**Technology:** Polyjet  \n**Printer:** [Objet Design Series](http://rapidmodel.com.my/3d-printers/stratasys-design-series/ \"Design Series\")  \n**Materials:** [Tango Black+](http://www.rapidmodel.com.my/portfolio-item/rubber-like/), [VeroWhite](http://www.rapidmodel.com.my/portfolio-item/rigid-opaque/), [VeroCyan](http://www.rapidmodel.com.my/portfolio-item/rigid-opaque/), [VeroClear](http://www.rapidmodel.com.my/portfolio-item/transparent/) (lens)  \n**Build Time:** 5 hours and 35 minutes\n\n**Outcome:**\n\n![Ezrul wearing 3D Printed Spectacle](/assets/uploads/blog/3d-printed-spectacles-img-20140820-113918.webp)\n\n**Implications:**\n\n- This is a concept modelling application which we need to find out if the design is feasible. Various factors such as ergonomics, functionality (joint of spectacle) and design were factored in for this project.\n- Polyjet is selected as it offers a wider range of materials, which in this case a mixture of rubber-like, ABS & translucent material. As this was part of our experiment with [Connex 3](http://www.rapidmodel.com.my/portfolio-item/objet350500-connex3/), it is capable of injecting 3 materials at a go which consists of ABS and rubber-like materials in different colors (2 different blue & 1 black, with different shore level).\n- The frame itself was printed in a go, notice how the joint functions, no post assembly is needed. This is the representation of precision printing.\n- To ease the wearer's uneasiness when frame is too tight etc, we printed some rubber-like material at the end of the frame (black rubber), this acts as a buffer to reduce the uneasiness.\n- The lens on the other hand, is printed separately and assembly later.\n\nAt the end of the day, the specs came quite quite comfy, look at how Ezrul is wearing it happily. So if you're looking to do concept modelling and it requires multiple material printing as well as colors, go for Polyjet as it offers much more diversity compared with FDM."
+}

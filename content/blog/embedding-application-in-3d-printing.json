@@ -1,0 +1,13 @@
+{
+  "title": "Embedding Application in 3D Printing",
+  "date": "2014-10-31",
+  "source": "IME",
+  "summary": "3D Printing has been flexible in many ways and of course - even in embedding IT chips. It is widely known that this technology is capable of integrating electronics into the prototype, just by pausing…",
+  "image": "/assets/uploads/blog/embedding-application-in-3d-printing-symphoy-3d-printed-gift-side-1024x768.webp",
+  "featured": false,
+  "draft": false,
+  "link": "",
+  "file": "",
+  "video": "",
+  "body": "3D Printing has been flexible in many ways and of course - even in embedding IT chips. It is widely known that this technology is capable of integrating electronics into the prototype, just by pausing and inserting the chip. During our preparation for [SolidWorks Innovation Day](http://www.cadcam.com.my/2014/09/solidworks-innovation-day/ \"IME SolidWorks Innovation Day\"), we toyed around this similar concept, but instead of chips, we wanted to **embed words within the gift**.\n\n### **Here Is What We Did:**\n\n**File Source:** Own design  \n**Technology:** Polyjet  \n**Printer:** [Objet500 Connex3](http://www.rapidmodel.com.my/portfolio-item/objet350500-connex3/ \"Design Series\")  \n**Materials: Digital Materials (Cyan, Yellow & Transparent)**  \n**Build Time:** 2 hours 49 minutes\n\n### Screenshots in CAD file:\n\n![Symphony 3D Cad File](/assets/uploads/blog/embedding-application-in-3d-printing-symphony-3d-cad-file-2.webp)\n\n*Symphony 3D Printed Gift*\n\nNoticed how it was designed to embed words inside inside the printed transparent frame?\n\n### Outcome:\n\n![Symphoy 3D Printed Gift_Side](/assets/uploads/blog/embedding-application-in-3d-printing-symphoy-3d-printed-gift-side-1030x772.webp)\n\n*Symphony 3D Printed Gift*\n\nLooks pretty cool eh? While we spin off the application onto printing a premium item, this is widely used in both engineering & medical field as for prototyping purposes as well as teaching aid. Check out this [medical application by The Engineering here](http://www.theengineer.co.uk/channels/design-engineering/in-depth/the-rise-of-multi-material-3d-printing/1016242.article).\n\nFrom a business perspective, the capability to do multi-material and multi-color printing cut shorts a significant amount of time and error.\n\n1. Reduced manufacturing layer - no need to go through multiple processes for a single part.\n2. Manufacturing a prototype will go through many manual process and by eliminating these processes, human error will be significantly reduced as well.\n\nThere is more to what Polyjet can do, check out our relevant posts below to find out more!"
+}

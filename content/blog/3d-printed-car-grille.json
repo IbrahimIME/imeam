@@ -1,0 +1,13 @@
+{
+  "title": "3D Printed Custom Made Car Grille For Form Fitting",
+  "date": "2014-07-19",
+  "source": "IME",
+  "summary": "Other than printing models such as Ford Model T, this round we printed a custom made car grille. Depending on what materials the vendor use i.e. metal or ABS , car grille would undergo CNC machining…",
+  "image": "/assets/uploads/blog/3d-printed-car-grille-iconpopbrand-large-091.webp",
+  "featured": false,
+  "draft": false,
+  "link": "",
+  "file": "",
+  "video": "",
+  "body": "Other than printing models such as [Ford Model T](blog-3d-printed-ford-model-t.html), this round we printed a custom made car grille. Depending on what materials the vendor use i.e. metal or ABS , car grille would undergo CNC machining or injection molding process for the finished product. In this round, we tried to simulate the similar environment by 3D printing it.\n\n**Technology:** FDM  \n**Printer:** [Fortus Production Series](http://www.rapidmodel.com.my/portfolio-item/fortus-450mc/ \"Production Series\")  \n**Materials:** ABS M30 - Ivory  \n**Build Time:** 41 hours 25 minutes\n\n**Outcome:**\n\n[Watch the video](http://www.youtube.com/watch?v=Ln2JBMfiNdo&list=UUxHlac-dD9xaYQcqbqsx5dA)\n\n**Implications:**\n\n- To develop a customised prototype such as this CNC machining would take up to approx. 3 weeks, and injection molding (including mold process up tp I.M) will take months. This is 3D printed in 2 days at an accessible cost.\n- Conventional method will face difficulty in producing such complex shape hence taking longer time, that is where 3D printer comes in.\n- Technology wise, [Polyjet's Digital ABS](http://www.rapidmodel.com.my/portfolio-item/digital-abs/ \"PolyJet Photopolymers\") (theoretically) is also capable of simulating such form fitting test. However FDM was the preferred option as it uses engineering grade thermoplastic materials, which in this case is [ABS M30](http://www.rapidmodel.com.my/portfolio-item/abs-m30/ \"Thermoplastic\"). Other than design validation, this will provide a realistic analysis to car manufacturers in terms of tensile strength and elongation test which will aid in their mass production process.\n- Also, FDM material is also suitable material for outdoor testing given at extreme condition such as mud, sleet, rain, snow, humid and etc.\n- The 3D printed car grille can also undergo UV coating / chrome plated for better finishing & further testing purposes."
+}

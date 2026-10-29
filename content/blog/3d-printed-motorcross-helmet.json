@@ -1,0 +1,13 @@
+{
+  "title": "Motorcross Helmet in Action",
+  "date": "2014-09-05",
+  "source": "IME",
+  "summary": "This week we printed something different, something that racer boy would yearn for - Motorcross Helmet. The best part is right after the model was printed, we had the opportunity to showcase this…",
+  "image": "/assets/uploads/blog/3d-printed-motorcross-helmet-img-20140905-154013-768x1024.webp",
+  "featured": false,
+  "draft": false,
+  "link": "",
+  "file": "",
+  "video": "",
+  "body": "This week we printed something different, something that racer boy would yearn for - Motorcross Helmet. The best part is right after the model was printed, we had the opportunity to showcase this during Innovating Malaysia Conference 2014.\n\nHere is how we did the printing, and some underlying reasons of material & technology selection:\n\n**File Source:** Rapid Model Development Sdn Bhd  \n**Technology:** FDM  \n**Printer:** [Fortus 380mc](http://www.rapidmodel.com.my/portfolio-item/fortus-380mc/ \"Production Series\"), [uPrintSE](http://www.rapidmodel.com.my/portfolio-item/uprint-se/ \"Idea Series\")  \n**Materials:** PC-ABS (Black), ABS (Red)  \n**Production Time:**\n\n| | Fortus 400mc | uPrintSE |\n| --- | --- | --- |\n| Build Time | 86 hours 24 minutes | 7 hours 44 minutes |\n| Assembly Time | \\- | 30 minutes |\n| Support Removal Time | 16 hours | 6 hours |\n\n**Implications:**\n\n- Traditionally, the production material for helmet is [polycarbonate](http://www.rapidmodel.com.my/portfolio-item/pc/) (PC) for best endurance and heat resistance. However, as we wanted the helmet in black and red which is not in the range of our PC material, we opted for [PC-ABS](http://www.rapidmodel.com.my/portfolio-item/pc-abs/) instead.\n- PC-ABS combines the best of both materials (PC & ABS) - the superior strength and heat resistance of PC and the flexibility of ABS.\n- For drop testing and pressure testing etc, this prototype will serve as a good gauge for improvements as compared with existing product.\n- Noticed how the black helmet base was printed in a go but we had to print the decor separately? This is due to FDM does not support multi-material modelling as that is under Polyjet's feature."
+}
