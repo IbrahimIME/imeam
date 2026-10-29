@@ -9,12 +9,11 @@
 // {{menu}} by the element's inner HTML, {{logo}} by partials/logo-<logo>.svg and {{ime45}} by partials/ime45.svg.
 // <!--if:name-->…<!--/if:name--> in a template is dropped when that value is empty.
 // Content is the JSON Decap CMS writes to content/<collection>/ (see site/admin/config.yml):
-//   resources → resources.html plus one <page>-<slug>.html per entry with an article body or post file
+//   resources → resources.html plus one <page>-<slug>.html per entry with an article body
 //   printers  → cards, plus printer-<slug>.html from templates/printer.html when "Product page" is on
 //   materials → the materials.html grid
 const fs = require('fs');
 const path = require('path');
-const TurndownService = require('turndown');
 
 const ROOT = __dirname;
 const SRC = path.join(ROOT, 'site');
@@ -90,52 +89,6 @@ function readEntries(dirName, required) {
 
 /* ---------- resources ---------- */
 
-// "Post file" uploads (case studies, webinars, blog, videos) land in content/post-files/ and replace the article.
-// Every format becomes Markdown, so it goes through the same safe renderer as an article typed in the CMS:
-// HTML (and the HTML inside XML) is converted by turndown, plain text is escaped.
-const POST_FILES = path.join(CONTENT, 'post-files');
-const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced', bulletListMarker: '-' });
-turndown.remove(['head', 'title', 'meta', 'link', 'style', 'script', 'noscript', 'iframe', 'object', 'embed', 'form']);
-
-const XML_ENTITIES = { lt: '<', gt: '>', amp: '&', quot: '"', apos: "'" };
-const decodeXml = s => s.replace(/&(#x[\da-f]+|#\d+|\w+);/gi, (m, e) => {
-  if (e[0] !== '#') return XML_ENTITIES[e.toLowerCase()] ?? m;
-  const cp = e[1].toLowerCase() === 'x' ? parseInt(e.slice(2), 16) : +e.slice(1);
-  return cp <= 0x10ffff ? String.fromCodePoint(cp) : m;
-});
-// Element text: CDATA sections as they are, everything else entity-decoded (escaped HTML becomes HTML)
-const xmlText = s => s.split(/(<!\[CDATA\[[\s\S]*?\]\]>)/).map(p => (p.startsWith('<![CDATA[') ? p.slice(9, -3) : decodeXml(p))).join('');
-
-// The first item/entry of a WordPress (WXR), RSS or Atom export, or a plain XML document with <content> or <body>
-function xmlArticle(xml, where) {
-  const item = xml.match(/<(item|entry)(?:\s[^>]*)?>([\s\S]*?)<\/\1>/i);
-  const scope = item ? item[2] : xml;
-  for (const tag of ['content:encoded', 'content', 'body', 'description', 'summary']) {
-    const m = scope.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`, 'i'));
-    if (m && m[1].trim()) return xmlText(m[1]);
-  }
-  throw new Error(`${where}: post file has no <content:encoded>, <content>, <body> or <description> element`);
-}
-
-const htmlBody = html => (html.match(/<body\b[^>]*>([\s\S]*)<\/body>/i) || [, html])[1];
-const textToHtml = t => t.split(/\r?\n\s*\r?\n/).filter(p => p.trim()).map(p => `<p>${esc(p.trim()).replace(/\r?\n/g, '<br>')}</p>`).join('');
-
-function readPostFile(value, where) {
-  const file = path.resolve(ROOT, String(value).trim().replace(/^\/+/, ''));
-  if (path.dirname(file) !== POST_FILES) throw new Error(`${where}: post file must be uploaded to content/post-files/`);
-  if (!fs.existsSync(file)) throw new Error(`${where}: post file ${value} not found`);
-  const text = fs.readFileSync(file, 'utf8').replace(/^﻿/, '');
-  const ext = path.extname(file).toLowerCase();
-  let md;
-  if (ext === '.md' || ext === '.markdown') md = text.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, ''); // drop front matter
-  else if (ext === '.txt') md = turndown.turndown(textToHtml(text));
-  else if (ext === '.html' || ext === '.htm') md = turndown.turndown(htmlBody(text));
-  else if (ext === '.xml') md = turndown.turndown(xmlArticle(text, where));
-  else throw new Error(`${where}: post file must be .md, .txt, .html or .xml, not "${ext || path.basename(file)}"`);
-  if (!md.trim()) throw new Error(`${where}: post file ${value} has no text`);
-  return md;
-}
-
 function loadResources() {
   const items = [];
   for (const type of TYPES) {
@@ -143,11 +96,10 @@ function loadResources() {
       const { where, slug } = e;
       const date = e.date ? String(e.date).slice(0, 10) : '';
       if (date && !/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new Error(`${where}: date must be YYYY-MM-DD`);
-      const body = e.post_file ? readPostFile(e.post_file, where) : e.body;
       items.push({
-        ...e, type, date, body,
+        ...e, type, date,
         image: url(e.image, where), file: url(e.file, where), link: url(e.link, where), video: url(e.video, where),
-        page: body && String(body).trim() ? `${type.page}-${slug}.html` : '',
+        page: e.body && String(e.body).trim() ? `${type.page}-${slug}.html` : '',
       });
     }
   }

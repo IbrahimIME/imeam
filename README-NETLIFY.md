@@ -6,7 +6,7 @@ stratasys.com pages; see the checklist.)
 
 ```
 netlify.toml                         Netlify settings: build command, publish folder, functions folder, headers
-package.json                         Build dependencies (marked for article text, turndown for HTML/XML post files)
+package.json                         Build dependency (marked, for article text)
 build.js                             Build: copies site/ to dist/, generates resource pages, inserts header and footer
 partials/                            Shared markup, edited once for all pages
   header.html, footer.html           Site header and footer
@@ -14,7 +14,6 @@ partials/                            Shared markup, edited once for all pages
 templates/page.html                  Page frame for the generated Resources page and resource pages
 templates/printer.html               Printer product page layout (filled from content/printers)
 content/                             CMS content, one JSON file per entry: printers/, materials/, a folder per resource type
-  post-files/                        Article files uploaded as "Post file" (not published as downloads)
 site/                                The website source, about 18 MB
   index.html, materials.html, materialise.html, amic.html (printer pages are generated)
   admin/                             Decap CMS (index.html, config.yml), served at /admin/
@@ -90,20 +89,11 @@ card; Features, Specifications and Applications are left out (with their menu li
 name, and the "81 materials" and "shown" counts update automatically.
 
 **Resources**: title, date, source (e.g. IME, Stratasys), summary, cover image, "Show on homepage", external
-link, PDF download, video (MP4 upload or YouTube/Vimeo link) and an optional article. Case Studies, Webinars, Blog
-and Videos also have a **Post file** field: upload the article as a file instead of typing it, and the website shows
-the file in place of the Article field. Accepted formats:
-- `.md` / `.markdown`: Markdown (front matter between `---` lines is ignored)
-- `.txt`: plain text; blank lines start a new paragraph
-- `.html` / `.htm`: the page body, converted to Markdown (scripts, styles, forms and embeds are dropped)
-- `.xml`: a WordPress (WXR), RSS or Atom export, or any XML with a `<content>` or `<body>` element; only the
-  first post's content is used. Title, date and summary still come from the CMS fields.
-
-Any other format stops the build with a message naming the entry. Where resources appear:
+link, PDF download, video (MP4 upload or YouTube/Vimeo link) and an optional article. Where they appear:
 - **resources.html**: every entry, newest first, with filters by type and a search box. Links such as
   `resources.html#safety-data-sheets` open with that filter on (the homepage chips and footer use them).
 - **Homepage, Resources section**: the six newest entries with "Show on homepage" ticked.
-- **Own page** (e.g. `blog-my-post.html`) when the article field is filled or a post file is uploaded. Without an article, the card links
+- **Own page** (e.g. `blog-my-post.html`) when the article field is filled. Without an article, the card links
   to the PDF, or else to the external link.
 
 One-time setup in the Netlify dashboard (after the Git deploy above):
