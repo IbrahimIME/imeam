@@ -180,9 +180,10 @@ collections:
     view_filters:
       - { label: Featured on homepage, field: featured, pattern: true }
       - { label: Hidden, field: draft, pattern: true }
-    fields: &fields
-      - { name: title, label: Title, widget: string }
-      - name: date
+    fields: &post_fields
+      - &f_title { name: title, label: Title, widget: string }
+      - &f_date
+        name: date
         label: Date
         widget: datetime
         format: YYYY-MM-DD
@@ -190,20 +191,22 @@ collections:
         time_format: false
         required: false
         hint: Leave empty for undated resources (shown as "<Source> resource").
-      - { name: source, label: Source, widget: string, default: IME, hint: "Shown before the date, e.g. IME or Stratasys." }
-      - { name: summary, label: Summary, widget: text, required: false, hint: One or two sentences for cards and search results. }
-      - { name: image, label: Cover image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: Landscape image (16:10 crop on cards). WebP or JPG. }
-      - { name: featured, label: Show on homepage, widget: boolean, default: false, hint: The six newest featured resources appear in the homepage Resources section. }
-      - { name: draft, label: Hidden, widget: boolean, default: false, hint: Keep the entry but leave it off the website. }
-      - name: link
+      - &f_source { name: source, label: Source, widget: string, default: IME, hint: "Shown before the date, e.g. IME or Stratasys." }
+      - &f_summary { name: summary, label: Summary, widget: text, required: false, hint: One or two sentences for cards and search results. }
+      - &f_image { name: image, label: Cover image, widget: image, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: Landscape image (16:10 crop on cards). WebP or JPG. }
+      - &f_featured { name: featured, label: Show on homepage, widget: boolean, default: false, hint: The six newest featured resources appear in the homepage Resources section. }
+      - &f_draft { name: draft, label: Hidden, widget: boolean, default: false, hint: Keep the entry but leave it off the website. }
+      - &f_link
+        name: link
         label: External link
         widget: string
         required: false
         pattern: ['^(https?://.+)?$', 'Must start with http:// or https://']
-        hint: Optional. Used as the card link when there is no article body or file.
-      - { name: file, label: Download (PDF), widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: "eBooks, white papers, spec sheets and SDS: upload the PDF here." }
-      - { name: video, label: Video, widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: "Upload an MP4, or choose “Insert from URL” for a YouTube or Vimeo link." }
-      - { name: body, label: Article, widget: markdown, required: false, hint: Optional. When filled, the resource gets its own page on the site. }
+        hint: Optional. Used as the card link when there is no article, post file or PDF.
+      - &f_file { name: file, label: Download (PDF), widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: "eBooks, white papers, spec sheets and SDS: upload the PDF here." }
+      - &f_video { name: video, label: Video, widget: file, media_folder: /site/assets/uploads, public_folder: /assets/uploads, required: false, hint: "Upload an MP4, or choose “Insert from URL” for a YouTube or Vimeo link." }
+      - { name: post_file, label: Post file, widget: file, media_folder: /content/post-files, public_folder: /content/post-files, choose_url: false, required: false, hint: "Optional. Upload the article as .md, .txt, .html or .xml (e.g. a WordPress or RSS export); the website shows it instead of the Article field below." }
+      - &f_body { name: body, label: Article, widget: markdown, required: false, hint: Optional. When filled, the resource gets its own page on the site. }
 
   - name: webinars
     label: Webinars
@@ -216,7 +219,7 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} · {{date}}"
     sortable_fields: [date, title]
-    fields: *fields
+    fields: *post_fields
 
   - name: blog
     label: Blog
@@ -229,7 +232,7 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} · {{date}}"
     sortable_fields: [date, title]
-    fields: *fields
+    fields: *post_fields
 
   - name: ebooks
     label: eBooks
@@ -242,7 +245,7 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} · {{date}}"
     sortable_fields: [date, title]
-    fields: *fields
+    fields: &fields [*f_title, *f_date, *f_source, *f_summary, *f_image, *f_featured, *f_draft, *f_link, *f_file, *f_video, *f_body]
 
   - name: white-papers
     label: White Papers
@@ -268,7 +271,7 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} · {{date}}"
     sortable_fields: [date, title]
-    fields: *fields
+    fields: *post_fields
 
   - name: spec-sheets
     label: Spec Sheets
