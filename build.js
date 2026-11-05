@@ -132,8 +132,9 @@ function videoEmbed(v, title) {
   let m;
   if ((m = v.match(/^https?:\/\/(?:www\.)?(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/i)))
     return `<iframe src="https://www.youtube-nocookie.com/embed/${m[1]}" title="${esc(title)}" allow="encrypted-media; picture-in-picture; fullscreen" loading="lazy"></iframe>`;
-  if ((m = v.match(/^https?:\/\/(?:www\.)?vimeo\.com\/(\d+)/i)))
-    return `<iframe src="https://player.vimeo.com/video/${m[1]}" title="${esc(title)}" allow="picture-in-picture; fullscreen" loading="lazy"></iframe>`;
+  // Unlisted Vimeo links (vimeo.com/<id>/<hash>) only play with their hash
+  if ((m = v.match(/^https?:\/\/(?:www\.)?vimeo\.com\/(\d+)(?:\/([\da-f]+))?/i)))
+    return `<iframe src="https://player.vimeo.com/video/${m[1]}${m[2] ? `?h=${m[2]}` : ''}" title="${esc(title)}" allow="picture-in-picture; fullscreen" loading="lazy"></iframe>`;
   if (/\.(mp4|webm)(\?|$)/i.test(v)) return `<video src="${esc(v)}" controls preload="metadata" playsinline></video>`;
   return '';
 }
