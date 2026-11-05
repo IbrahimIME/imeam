@@ -10,7 +10,7 @@
   --ssys:#32C8FF; --ssys-dark:#00A7E5; --ssys-2:#42A2DA; --ssys-soft:rgba(50,200,255,.12);
   --live:#34d399; --warn:#f0cf86;
   --f-display:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --f-body:var(--f-display); --f-mono:'JetBrains Mono',ui-monospace,monospace;
-  --r:14px; --nav:72px; --step:30px; --tab:34px;
+  --r:14px; --nav:72px; --step:0px; --tab:34px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 16px)}
@@ -346,11 +346,15 @@ window.__setVideo=(box,src,poster,title)=>{box.querySelector('iframe,video')?.re
 
 /* folder stack: tall folders stick by their bottom edge, short ones by their tab */
 const nav=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav'))||72;
-const step=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--step'))||30;
+const step=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--step'))||0;
 let folders=[];const tabH=34,gap=12;
 function refreshFolders(){folders=[...document.querySelectorAll('.fe')].filter(f=>getComputedStyle(f).display!=='none');folders.forEach((f,i)=>{f.style.setProperty('--i',i);const s=f.querySelector('.fe-tab small');if(s)s.textContent=String(i).padStart(2,'0')})}
 const desk=()=>innerWidth>760&&innerHeight>560;
-function layout(){refreshFolders();folders.forEach((f,i)=>{const sh=f.querySelector('.fe-sheet'),inn=f.querySelector('.fe-inner');
+/* tabs sit side by side in one row; if they do not fit, they overlap evenly */
+function placeTabs(){const tabs=folders.map(f=>f.querySelector(".fe-tab"));if(!desk()){tabs.forEach(t=>t&&(t.style.marginLeft=""));return}
+  const W=folders[0]?folders[0].offsetWidth:0,ws=tabs.map(t=>t?t.offsetWidth:0),n=ws.length,sum=ws.reduce((a,b)=>a+b,0),pad=Math.round(W*.012);
+  const g=n>1?Math.min(4,(W-pad*2-sum)/(n-1)):0;let x=pad;tabs.forEach((t,i)=>{if(t)t.style.marginLeft=Math.round(x)+"px";x+=ws[i]+g})}
+function layout(){refreshFolders();placeTabs();folders.forEach((f,i)=>{const sh=f.querySelector('.fe-sheet'),inn=f.querySelector('.fe-inner');
   const sp=f.nextElementSibling;if(!desk()){f.style.top='';sp.style.height='';f.style.removeProperty('--H');f._ov=0;return}
   const top=nav+gap+i*step;const H=Math.max(380,innerHeight-top-tabH-gap);f.style.top=top+'px';f.style.setProperty('--H',H+'px');
   const ov=Math.max(0,inn.scrollHeight-H);f._ov=ov;f._top=top;
