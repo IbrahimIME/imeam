@@ -391,7 +391,7 @@ window.__filter=(groupSel,itemSel,attr,countSel)=>{const g=document.querySelecto
   });
 })();
 </script><script>(()=>{
-const WA='60123010100';
+const WA='60123010100',MAX_MB=4;
 function summary(f){const fd=new FormData(f),skip=['form-name','bot-field','pdpa-consent','page'];const lines=['New enquiry from the IME Additive Manufacturing website'];
   for(const [k,v] of fd){if(skip.includes(k)||v instanceof File||!String(v).trim())continue;const lab=f.querySelector(`label[for="${k}"]`);lines.push(`${k==='inquiry-type'?'Enquiry type':(lab?lab.textContent.replace(/\s*\*$/,''):k)}: ${v}`)}
   lines.push('Page: '+location.pathname.split('/').pop());return lines.join('\n')}
@@ -399,10 +399,12 @@ document.querySelectorAll('form.lead').forEach(f=>{
   const pg=f.querySelector('input[name="page"]');if(pg)pg.value=(location.pathname.split('/').pop()||'index.html')+location.hash;
   const wa=f.querySelector('[data-wa]');wa.addEventListener('click',()=>{wa.href='https://wa.me/'+WA+'?text='+encodeURIComponent(summary(f))});
   f.addEventListener('submit',async e=>{e.preventDefault();if(!f.reportValidity())return;const st=f.querySelector('.ok'),btn=f.querySelector('button[type="submit"]');btn.disabled=true;
-    const fd=new FormData(f),file=[...f.querySelectorAll('input[type="file"]')].some(i=>i.files.length);let ok=false;
-    if(location.protocol.startsWith('http')){try{const r=await fetch('/',{method:'POST',body:file?fd:new URLSearchParams(fd),headers:file?undefined:{'Content-Type':'application/x-www-form-urlencoded'}});ok=r.ok}catch(_){}}
+    const fd=new FormData(f),live=location.protocol.startsWith('http');let ok=false,err='';
+    /* sent by netlify/functions/send-form.mjs, which emails the IME team over SMTP */
+    if([...f.querySelectorAll('input[type="file"]')].some(i=>[...i.files].some(x=>x.size>MAX_MB*1048576)))err='The attachment is too large (max '+MAX_MB+' MB)';
+    else if(live){try{const r=await fetch('/api/send-form',{method:'POST',body:fd,headers:{Accept:'application/json'}});ok=r.ok;if(!ok)err=(await r.json().catch(()=>({}))).error||''}catch(_){}}
     btn.disabled=false;st.hidden=false;st.className='ok '+(ok?'good':'warn');
-    st.textContent=ok?'Thank you. Your request has reached the IME team. To follow up straight away, tap “WhatsApp us”.':'Preview only: nothing was sent from this mockup. On the live site this goes to the IME sales team and the leads log.';
+    st.textContent=ok?'Thank you. Your request has reached the IME team. To follow up straight away, tap “WhatsApp us”.':!live&&!err?'Preview only: nothing was sent from this local copy. On the live site this is emailed to the IME sales team.':'Sorry, your request was not sent'+(err?': '+err:'')+'. Please try again, or tap “WhatsApp us”.';
     if(ok)f.querySelectorAll('input:not([type=hidden]):not([type=checkbox]),textarea').forEach(i=>{i.value=''});});
 });})();</script><script>(()=>{let tech='all',q='';const g=document.getElementById('mf'),c=document.getElementById('mc');
 function apply(){let n=0;document.querySelectorAll('#mgrid .mat').forEach(it=>{const s=(tech==='all'||it.dataset.t===tech)&&(!q||it.dataset.n.includes(q));it.hidden=!s;if(s)n++});c.textContent=n+' shown';dispatchEvent(new Event('resize'))}

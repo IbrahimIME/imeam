@@ -24,7 +24,8 @@ site/                                The website source, about 18 MB
   assets/js/three.min.js             three.js r128 for the AMIC 3D facility model (MIT licence)
   assets/fonts/                      Self-hosted fonts (SIL Open Font License)
 dist/                                Build output (publish directory); generated, do not edit
-netlify/functions/submission-created.js   Optional WhatsApp alert for each new lead
+netlify/functions/send-form.mjs      Form handler at /api/send-form: emails each lead over SMTP
+netlify/lib/whatsapp.mjs             Optional WhatsApp alert for each new lead (called by send-form)
 asset-manifest.csv                   Every image and video: file, Stratasys portal title, portal item ID, size
 ```
 
@@ -115,24 +116,44 @@ To edit content on your own computer without signing in: run `npm run cms` in th
 any static server (for example `npx serve site`) and open its /admin/ page. Changes are written straight to
 `content/`; run `npm run build` to see them in `dist/`.
 
-## 5. Forms and email notifications
+## 5. Forms and email (SMTP)
 
-The four forms (homepage enquiry, F3300 pricing, AMIC visit with CAD upload, Materialise licensing) are
-Netlify Forms. In the Netlify dashboard:
+The four forms (homepage enquiry, F3300 pricing, AMIC visit with CAD upload, Materialise licensing) post to
+`/api/send-form`, a Netlify Function (`netlify/functions/send-form.mjs`) that emails each lead through IME's own
+SMTP server. Netlify Forms is not used, so leave form detection off.
 
-1. **Forms > enable form detection** (newer sites have it off by default), then redeploy.
-2. **Forms > Form notifications > Add notification > Email notification**, once per recipient, for
-   "Any form":
-   - stevenyap@cadcam.com.my (Steven Yap)
-   - malone@cadcam.com.my (Malone Mah)
-   - joey.lin@cadcam.com.my (Joey Lin)
-   - info.3dp@cadcam.com.my
-3. Submit one test enquiry from each page and check that all four inboxes receive it.
+1. Get SMTP details for a sender mailbox (for example `web@cadcam.com.my`): host, port, login and password.
+   - **Microsoft 365:** `smtp.office365.com`, port 587. The mailbox needs **Authenticated SMTP** turned on
+     (Microsoft 365 admin > user > Mail > Manage email apps). Microsoft has been retiring basic-auth SMTP in
+     Exchange Online, so check with IT that it still works for IME's tenant. If it doesn't, use a
+     transactional email service's SMTP (for example Brevo, Amazon SES or SendGrid) with `cadcam.com.my`
+     verified as the sending domain.
+   - **Gmail / Google Workspace:** `smtp.gmail.com`, port 465, with an app password (needs 2-step verification).
+2. In Netlify: **Site configuration > Environment variables**, add (tick **Secret** for `SMTP_PASS`):
 
-The addresses are set in Netlify, not written into the pages, so spam bots can't harvest them from the site.
-Each form has a hidden spam trap (honeypot), a required PDPA consent box (have IME's legal or
-compliance team approve the wording), and hidden fields for the inquiry type and page, used by the leads
-dashboard. Check Netlify's current limits for form submissions and file uploads on IME's plan.
+   | Variable | Example |
+   |---|---|
+   | `SMTP_HOST` | `smtp.office365.com` |
+   | `SMTP_PORT` | `587` (STARTTLS) or `465` (TLS) |
+   | `SMTP_USER` | `web@cadcam.com.my` |
+   | `SMTP_PASS` | the mailbox or app password |
+   | `MAIL_FROM` | `IME Website <web@cadcam.com.my>` (must be an address the SMTP login may send as) |
+   | `MAIL_TO` | `info.3dp@cadcam.com.my,stevenyap@cadcam.com.my,malone@cadcam.com.my,joey.lin@cadcam.com.my` |
+   | `MAIL_BCC` | optional |
+   | `MAX_UPLOAD_MB` | optional, default `4` (Netlify caps a function request at about 6 MB) |
+
+3. Redeploy (Deploys > Trigger deploy), then submit one test enquiry from each page and check that every
+   inbox receives it. Each email's **Reply-To** is the visitor, so replying answers them directly; CAD files
+   from the AMIC form arrive as attachments.
+
+If a submission fails, the visitor sees "Sorry, your request was not sent…" and the reason is in **Logs >
+Functions > send-form** (for example a missing variable or the SMTP server refusing the login). The SMTP
+password never appears in the pages or the repo.
+
+Spam protection: a hidden honeypot field (bots that fill it get a fake "sent" and nothing is emailed),
+posts from other websites are refused, and only the four known forms, valid emails, the PDPA consent tick
+and CAD file types (STEP, STP, STL, 3MF, OBJ, IGES) are accepted. Have IME's legal or compliance team approve the
+PDPA wording. Unlike Netlify Forms, submissions are not stored in Netlify: the emails are the record.
 
 ## 6. WhatsApp (main +60 12-301 0100; copies +60 16-626 8869 and +60 12-322 6673)
 
@@ -143,7 +164,7 @@ WhatsApp has no "cc". There are two ways to reach all three numbers:
   so the copies don't get this message. If all three people should see these chats, either use the
   WhatsApp Business app's multi-device linking on the main number (up to a few linked devices;
   check WhatsApp's current limit), or forward from the main phone.
-- **Automatic alert for every lead (to all three):** `netlify/functions/submission-created.js` sends the same
+- **Automatic alert for every lead (to all three):** after emailing a lead, `send-form` calls `netlify/lib/whatsapp.mjs`, which sends the same
   WhatsApp template message to the main number and to each copy number, through Meta's WhatsApp Business
   Cloud API. It needs:
   1. A Meta Business account with WhatsApp Cloud API set up and a **sender** number registered to it. None of
@@ -170,7 +191,7 @@ the task is built against the real email format.
 - IME approval of all Stratasys images and videos (see `asset-manifest.csv`)
 - Decide whether the remaining "read more" links to stratasys.com (F3300 page, materials, buyer's guide,
   SAF design guide, Siemens case study) stay as links or are rebuilt as IME pages
-- Form detection on, four email notifications tested
+- SMTP environment variables set; a test from each of the four forms received by every `MAIL_TO` inbox
 - PDPA consent wording and privacy-notice link approved
 - Markforged stays hidden on the Netlify build (no reviewer bar, fixed to Hidden). To publish it, change
   `MF_DEFAULT=false` to `MF_DEFAULT=true` in each of the five HTML pages in `site/` (or ask for a rebuild), then redeploy
