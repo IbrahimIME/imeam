@@ -10,5 +10,142 @@
   "image": "/assets/stratasys/j850-core.webp",
   "image_alt": "",
   "new": true,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "J850 Core Functional PolyJet",
+    "description": "Stratasys J850 Core 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Professional",
+    "eyebrow": "Stratasys J850 Core · PolyJet",
+    "headline": "Professional PolyJet",
+    "headline_em": "for functional prototyping.",
+    "lead": "The J850 build tray and 14-micron detail, with up to three materials per print (rigid, flexible, transparent and tough), for teams that don’t need full colour.",
+    "spec_sheet": "https://www.stratasys.com/en/3d-printers/printer-catalog/polyjet/j850-core-3d-printer/",
+    "facts": [
+      {
+        "value": "490×390×200",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "14",
+        "label": "Minimum layer, µm"
+      },
+      {
+        "value": "3",
+        "label": "Materials in one print"
+      },
+      {
+        "value": "2",
+        "label": "Print modes"
+      }
+    ],
+    "footnote": "Source: stratasys.com J850 Core page, read 10 Nov 2026.",
+    "features_heading": "Create without compromise.",
+    "features": [
+      {
+        "title": "Three model materials",
+        "text": "Overmoulding, seals, snap-fits and clear elements in one print."
+      },
+      {
+        "title": "Large build tray",
+        "text": "Big parts or many small ones per job."
+      },
+      {
+        "title": "High Quality and High Speed",
+        "text": "Detail or throughput per job."
+      },
+      {
+        "title": "GrabCAD Print Pro workflow",
+        "text": "Automatic nesting, layout optimisation and job presets."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j850-core.webp",
+    "feature_image_alt": "Stratasys J850 Core",
+    "feature_caption": "J850 Core · Stratasys",
+    "benefits": [
+      {
+        "title": "More accessible",
+        "text": "Professional PolyJet without paying for full colour."
+      },
+      {
+        "title": "Functional prototypes",
+        "text": "Rigid, flexible, transparent and tough in one print."
+      },
+      {
+        "title": "Office-friendly",
+        "text": "Simple workflow with minimal post-processing."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "490 × 390 × 200 mm (19.3 × 15.35 × 7.9 in.)"
+      },
+      {
+        "label": "Print modes",
+        "value": "High Quality: up to 3 resins, 14 µm · High Speed: up to 3 resins, 27 µm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "Under 100 mm: ±100 µm. Over 100 mm: ±200 µm or ±0.06 % of part length, whichever is greater (typical, rigid materials)"
+      },
+      {
+        "label": "Materials",
+        "value": "ToughONE (black and white), VeroUltra, VeroUltra Clear, Agilus30"
+      },
+      {
+        "label": "Support",
+        "value": "SUP705B"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "1,400 × 1,260 × 1,100 mm · 430 kg; material cabinet 1,119 × 656 × 637 mm · 153 kg"
+      },
+      {
+        "label": "Power",
+        "value": "100–120 VAC, 50–60 Hz, 13.5 A, 1 phase; or 220–240 VAC, 50–60 Hz, 7 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, EAC"
+      }
+    ],
+    "applications_image": "/assets/stratasys/polyjet-printed-laptop-parts.webp",
+    "applications_heading": "Form, fit and function, validated early.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/polyjet-printed-laptop-parts.webp",
+        "title": "Functional prototyping",
+        "text": "Form, fit, function and assembly checks."
+      },
+      {
+        "image": "/assets/stratasys/air-purifier.webp",
+        "title": "Consumer products",
+        "text": "Housings, enclosures and wearables."
+      },
+      {
+        "image": "/assets/stratasys/car-interior-3d-printed-product-parts.webp",
+        "title": "Automotive prototyping",
+        "text": "Durable components, flexible seals and interior parts."
+      }
+    ],
+    "compare": [
+      "j850-pro",
+      "j850-prime",
+      "j55-prime"
+    ]
+  }
 }

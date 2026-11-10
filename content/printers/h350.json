@@ -9,5 +9,128 @@
   "image": "/assets/stratasys/saf.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "H350 SAF Production 3D Printer",
+    "description": "Stratasys H350 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/saf.mp4",
+    "category": "Production",
+    "eyebrow": "Stratasys H350 · Selective Absorption Fusion",
+    "headline": "Cost-efficient,",
+    "headline_em": "higher-volume production.",
+    "lead": "Selective Absorption Fusion with industrial piezo printheads and closed-loop thermal control produces repeatable nylon parts: hundreds per build in under 12 hours†.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/saf/h350-printer/h350-saf-printer-en-brochure.pdf",
+    "facts": [
+      {
+        "value": "315×208×293",
+        "label": "Build volume, mm"
+      },
+      {
+        "value": "<12 h",
+        "label": "Hundreds of parts per build†"
+      },
+      {
+        "value": "40 kg",
+        "label": "Powder for two full builds†"
+      },
+      {
+        "value": "Up to 40 %",
+        "label": "Nesting density†"
+      }
+    ],
+    "footnote": "† Stratasys claims; typical nesting is about 12 %. Source: stratasys.com H350 page, read 10 Nov 2026.",
+    "features_heading": "Production consistency, build after build.",
+    "features": [
+      {
+        "title": "Compact and scalable",
+        "text": "Two H350 systems in the space of one competing solution (Stratasys claim)."
+      },
+      {
+        "title": "Advanced thermal control",
+        "text": "Closed-loop heating with distributed ceramic heaters and thermal cameras."
+      },
+      {
+        "title": "Industrial piezo printheads",
+        "text": "No consumable printheads or cleaning rolls; printheads under warranty."
+      },
+      {
+        "title": "Fixed print times",
+        "text": "Consistent part quality and predictable scheduling."
+      },
+      {
+        "title": "PowderEase T1",
+        "text": "Automates breakout, sieving, dosing and loading."
+      }
+    ],
+    "feature_image": "/assets/stratasys/saf.webp",
+    "feature_image_alt": "Stratasys H350",
+    "feature_caption": "H350 · Stratasys",
+    "benefits": [
+      {
+        "title": "Lower cost per part",
+        "text": "Efficient powder use and minimal consumables."
+      },
+      {
+        "title": "Scalable production",
+        "text": "Serial production of repeatable end-use parts."
+      },
+      {
+        "title": "Simpler workflow",
+        "text": "One operator can run several printers."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build volume",
+        "value": "315 × 208 × 293 mm (12.4 × 8.2 × 11.5 in.)"
+      },
+      {
+        "label": "Process",
+        "value": "Selective Absorption Fusion with High Absorption Fluid"
+      },
+      {
+        "label": "Materials",
+        "value": "SAF PA12, SAF PA12 Powered by Evonik, High Yield PA11, SAF PP, SAF ReLife PA12"
+      },
+      {
+        "label": "Powder capacity",
+        "value": "40 kg, enough for two full builds (Stratasys claim)"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print with fleet monitoring"
+      },
+      {
+        "label": "Post-processing",
+        "value": "PowderEase T1 (optional automation)"
+      }
+    ],
+    "applications_image": "/assets/stratasys/saf-technology-gotz-maschinen-case-study.webp",
+    "applications_heading": "End-use nylon parts at production volume.",
+    "applications": [
+      {
+        "title": "Production parts",
+        "text": "On-demand, low-volume and bridge-to-production parts."
+      },
+      {
+        "title": "End-of-arm tooling",
+        "text": "Lighter, organic designs for robot tools."
+      },
+      {
+        "title": "Wire harness fixtures",
+        "text": "Additive fixtures for harness assembly."
+      }
+    ],
+    "compare": [
+      "origin-two",
+      "f3300",
+      "neo800-neo450s"
+    ],
+    "form_options": [
+      "Production parts",
+      "End-of-arm tooling",
+      "Prototyping"
+    ]
+  }
 }

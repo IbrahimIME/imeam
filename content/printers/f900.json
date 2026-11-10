@@ -10,5 +10,147 @@
   "image": "/assets/stratasys/f900.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "F900 Large-Format Industrial FDM",
+    "description": "Stratasys F900 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/fdm.mp4",
+    "category": "Industrial",
+    "eyebrow": "Stratasys F900 · Industrial FDM",
+    "headline": "The standard for",
+    "headline_em": "large-scale 3D printing.",
+    "lead": "The FDM workhorse: a 914 × 610 × 914 mm build, Stratasys’ widest choice of FDM materials, including ULTEM, PEKK and PEEK, and the repeatability that regulated production depends on.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/fdm-printers/f900-printer/redesign-2023/pss_fdm_f900_0826a.pdf",
+    "facts": [
+      {
+        "value": "914×610×914",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "0.127–0.508",
+        "label": "Layer thickness, mm"
+      },
+      {
+        "value": "±0.089",
+        "label": "XY accuracy, mm*"
+      },
+      {
+        "value": "2 + 2",
+        "label": "Model + support canisters"
+      }
+    ],
+    "footnote": "* or ±0.0015 mm/mm, whichever is greater. Source: stratasys.com F900 page, read 10 Nov 2026.",
+    "features_heading": "Built for big parts and regulated production.",
+    "features": [
+      {
+        "title": "Two build zones",
+        "text": "Small or large build sheets on the same platen."
+      },
+      {
+        "title": "Soluble support",
+        "text": "Complex internal geometry that machining can’t make."
+      },
+      {
+        "title": "Fortus FDC (optional)",
+        "text": "Material delivery and drying cabinet for longer unattended builds."
+      },
+      {
+        "title": "Shop-floor data",
+        "text": "MTConnect, Insight and Control Center job management."
+      },
+      {
+        "title": "ProtectAM (optional)",
+        "text": "Secure operating system for U.S. DoD STIG requirements."
+      }
+    ],
+    "feature_image": "/assets/stratasys/f900.webp",
+    "feature_image_alt": "Stratasys F900",
+    "feature_caption": "F900 · Stratasys",
+    "benefits": [
+      {
+        "title": "Production-ready",
+        "text": "Large single-piece parts or multi-part batches."
+      },
+      {
+        "title": "Material versatility",
+        "text": "Standard to high-temperature, high-performance polymers."
+      },
+      {
+        "title": "Reliability",
+        "text": "Consistent results for competitive manufacturing."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "914.4 × 609.6 × 914.4 mm (36 × 24 × 36 in.)"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "0.127–0.508 mm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "±0.089 mm or ±0.0015 mm/mm, whichever is greater; Z adds slice-height tolerance (95 % dimensional yield)"
+      },
+      {
+        "label": "Materials",
+        "value": "Includes ULTEM 9085 and ULTEM 1010 resin, Antero 800NA and 840CN03 (PEKK), VICTREX AM 200 PEEK, FDM Nylon 12CF, FDM PA6/66-GF30-FR and ASA in 12 colours. Full list on the spec sheet."
+      },
+      {
+        "label": "Material delivery",
+        "value": "2 model + 2 support canisters, 1,508 cm³ each; with Fortus FDC, 2 model canisters of 4,097 cm³"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, GrabCAD Print Pro, Insight, Control Center; ProtectAM optional"
+      },
+      {
+        "label": "Network",
+        "value": "Wired TCP/IPv6, 10/100 Base-T Ethernet"
+      },
+      {
+        "label": "System size & weight",
+        "value": "277.2 × 168.3 × 228.1 cm with light tower · 2,869 kg"
+      },
+      {
+        "label": "Power",
+        "value": "230 VAC, 3-phase, 50/60 Hz, 40 A"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "Max 29 °C room temperature, max 80 % humidity"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, cTUVus, RCM, EAC, FCC Part B"
+      }
+    ],
+    "applications_image": "/assets/stratasys/fdm-printers-siemens-mobility-case-study.webp",
+    "applications_heading": "Large prototypes, tooling and certified production parts.",
+    "applications_text": "Used in aerospace, rail, automotive and defence, where part size, material performance and traceability matter.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Full-size functional prototypes for fast design iteration."
+      },
+      {
+        "image": "/assets/stratasys/automotive-bumper-on-paint-line-with-3d-printed-masking-tool.webp",
+        "title": "Manufacturing tooling",
+        "text": "Lighter jigs, fixtures and manufacturing aids in thermoplastics."
+      },
+      {
+        "image": "/assets/stratasys/fdm-printers-siemens-mobility-case-study.webp",
+        "title": "Production parts",
+        "text": "Low-volume and bridge-to-production runs."
+      }
+    ],
+    "compare": [
+      "f3300",
+      "f770",
+      "fortus-450mc"
+    ]
+  }
 }

@@ -10,5 +10,122 @@
   "image": "/assets/stratasys/j8-series.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "J8 Series Multi-Material PolyJet",
+    "description": "Stratasys J8 Series 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Professional",
+    "eyebrow": "Stratasys J8 Series · PolyJet",
+    "headline": "Challenge meets",
+    "headline_em": "versatility.",
+    "lead": "The J8 Series (J850 Pro, J850 Prime and J826 Prime) prints up to seven materials in one job, from rigid to rubber-like and opaque to transparent, with PANTONE-validated colour.",
+    "spec_sheet": "https://www.stratasys.com/en/3d-printers/printer-catalog/polyjet/j8-series-printers/",
+    "facts": [
+      {
+        "value": "7",
+        "label": "Materials in one print"
+      },
+      {
+        "value": "14",
+        "label": "Minimum layer, µm"
+      },
+      {
+        "value": "1,970",
+        "label": "PANTONE colours"
+      },
+      {
+        "value": "490×390×200",
+        "label": "J850 tray, mm"
+      }
+    ],
+    "footnote": "PANTONE validation applies to colour-capable models. Source: stratasys.com J8 Series pages, read 10 Nov 2026.",
+    "features_heading": "One family, from functional to full colour.",
+    "features": [
+      {
+        "title": "Up to seven materials",
+        "text": "Flexible to rigid and opaque to transparent in one model."
+      },
+      {
+        "title": "Multiple print modes",
+        "text": "High Quality for detail, Super High Speed for drafts."
+      },
+      {
+        "title": "PANTONE validation",
+        "text": "Colour matching to 1,970 PANTONE colours."
+      },
+      {
+        "title": "Two support materials",
+        "text": "Water-jet removable or soluble."
+      },
+      {
+        "title": "GrabCAD Print",
+        "text": "Direct CAD import and job management."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j8-series.webp",
+    "feature_image_alt": "Stratasys J8 Series",
+    "feature_caption": "J8 Series · Stratasys",
+    "specs": [
+      {
+        "label": "Models",
+        "value": "J850 Pro, J850 Prime, J826 Prime"
+      },
+      {
+        "label": "Build size",
+        "value": "J850 Pro / Prime: 490 × 390 × 200 mm · J826 Prime: 255 × 252 × 200 mm"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "Down to 14 µm"
+      },
+      {
+        "label": "Material families",
+        "value": "ToughONE, VeroUltra, Elastico, Agilus30 Colors, VeroVivid, Vero"
+      },
+      {
+        "label": "Colour",
+        "value": "PANTONE validated to 1,970 colours"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      }
+    ],
+    "applications_image": "/assets/stratasys/polyjet-printed-laptop-parts.webp",
+    "applications_heading": "Models that look and feel like the finished product.",
+    "applications_text": "Consumer products, packaging and medical models, signed off from the print instead of the render.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/air-purifier.webp",
+        "title": "Consumer products",
+        "text": "PANTONE-validated prototypes for approvals."
+      },
+      {
+        "image": "/assets/stratasys/nail-polish-packaging.webp",
+        "title": "Packaging",
+        "text": "Transparent, multi-colour packaging prototypes."
+      },
+      {
+        "image": "/assets/stratasys/medical-printed-3d-anatomical-head-full-color.webp",
+        "title": "Medical models",
+        "text": "Anatomical training models."
+      }
+    ],
+    "compare": [
+      "j850-pro",
+      "j850-prime",
+      "j826-prime"
+    ],
+    "form_options": [
+      "Design & colour models",
+      "Prototyping",
+      "Medical models"
+    ]
+  }
 }

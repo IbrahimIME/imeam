@@ -10,5 +10,152 @@
   "image": "/assets/stratasys/f370cr.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "F370CR and F190CR Carbon-Fibre FDM",
+    "description": "Stratasys F370CR · F190CR 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/fdm.mp4",
+    "category": "Composite",
+    "eyebrow": "Stratasys F370CR · F190CR · Composite FDM",
+    "headline": "Affordable carbon-fibre",
+    "headline_em": "3D printing.",
+    "lead": "Composite-ready F123 printers for carbon-fibre ABS and nylon, so strong, light jigs, fixtures and tooling can replace machined metal parts.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/fdm-printers/f123-cr/brochures/pss_fdm_f370cr_1026a.pdf",
+    "facts": [
+      {
+        "value": "355×254×355",
+        "label": "F370CR build, mm"
+      },
+      {
+        "value": "305×254×305",
+        "label": "F190CR build, mm"
+      },
+      {
+        "value": "±0.200",
+        "label": "Accuracy, mm*"
+      },
+      {
+        "value": "3",
+        "label": "Carbon-fibre materials (F370CR)"
+      }
+    ],
+    "footnote": "* or ±0.002 mm/mm, whichever is greater; Z adds ±1 layer height. Source: stratasys.com F370CR and F190CR pages, read 10 Nov 2026.",
+    "features_heading": "Supplement machining with carbon fibre.",
+    "features": [
+      {
+        "title": "Carbon-fibre materials",
+        "text": "ABS-CF10 and FDM Nylon-CF10; the F370CR adds FDM Nylon 12CF."
+      },
+      {
+        "title": "Up to four layer resolutions",
+        "text": "Choose detail or speed per job."
+      },
+      {
+        "title": "Hardened extrusion path",
+        "text": "Built for abrasive carbon-fibre filaments."
+      },
+      {
+        "title": "Soluble support",
+        "text": "Complex geometry without manual support removal."
+      },
+      {
+        "title": "GrabCAD Print and MTConnect",
+        "text": "Job preparation and shop-floor data."
+      }
+    ],
+    "feature_image": "/assets/stratasys/f370cr.webp",
+    "feature_image_alt": "Stratasys F370CR · F190CR",
+    "feature_caption": "F370CR · F190CR · Stratasys",
+    "benefits": [
+      {
+        "title": "Strength",
+        "text": "Stratasys says Nylon-CF10 is 67 % stronger and 190 % stiffer than its base nylon."
+      },
+      {
+        "title": "Cost effective",
+        "text": "Composite and non-composite materials on one printer."
+      },
+      {
+        "title": "Small footprint",
+        "text": "Fits a classroom, office or shop."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "F370CR: 355 × 254 × 355 mm · F190CR: 305 × 254 × 305 mm"
+      },
+      {
+        "label": "Material bays",
+        "value": "F370CR: 2 model + 2 support · F190CR: 1 model + 1 support"
+      },
+      {
+        "label": "Accuracy",
+        "value": "±0.200 mm or ±0.002 mm/mm, whichever is greater; Z adds ±1 layer height"
+      },
+      {
+        "label": "Materials",
+        "value": "F370CR: FDM Nylon 12CF, FDM Nylon-CF10, ABS-CF10, ASA, ABS-M30, PC-ABS, ABS-ESD7, Diran 410MF07, TPU 92A · F190CR: FDM Nylon-CF10, ABS-CF10, ASA, ABS-M30, TPU 92A"
+      },
+      {
+        "label": "Support",
+        "value": "Soluble and breakaway FDM support"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, GrabCAD Print Pro, Insight (F370CR); MTConnect enabled"
+      },
+      {
+        "label": "Network",
+        "value": "Wired 100BASE-T Ethernet (TCP/IP), RJ45; wireless-ready IEEE 802.11 b/g/n; WPA2-PSK and 802.1x EAP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "1,626 × 864 × 711 mm · 227 kg"
+      },
+      {
+        "label": "Power",
+        "value": "100–132 V / 15 A or 200–240 V / 7 A, 50/60 Hz"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "15–30 °C, 30–70 % RH"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE (low-voltage and EMC), FCC, EAC, cTUVus, KC, RoHS, WEEE, REACH, RCM"
+      }
+    ],
+    "applications_image": "/assets/stratasys/tool-handle-in-hands.webp",
+    "applications_heading": "Strong, light tools that replace machined metal.",
+    "applications_text": "Workholding, end-of-arm tools and functional prototypes in carbon-fibre composites.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/tool-handle-in-hands.webp",
+        "title": "Jigs and fixtures",
+        "text": "Strong, lightweight polymer tools in place of metal."
+      },
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Functional prototypes in composites."
+      },
+      {
+        "image": "/assets/stratasys/jw-speaker-custom-motorcycle-headlight-3d-printed-housing.webp",
+        "title": "Production parts",
+        "text": "Low-volume end-use parts."
+      }
+    ],
+    "compare": [
+      "f170-f370",
+      "fortus-450mc",
+      "f870"
+    ],
+    "form_options": [
+      "Tooling, jigs & fixtures",
+      "Prototyping",
+      "Production parts"
+    ]
+  }
 }

@@ -10,5 +10,156 @@
   "image": "/assets/stratasys/j850-prime.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "J850 Prime Full-Colour PolyJet",
+    "description": "Stratasys J850 Prime 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Professional",
+    "eyebrow": "Stratasys J850 Prime · PolyJet",
+    "headline": "Dream it.",
+    "headline_em": "Print it.",
+    "lead": "Full-colour, multi-material prototypes in one print: up to seven resins, 14-micron layers and PANTONE-validated colour, from glass-like clear to rubber-like flexible.",
+    "spec_sheet": "https://www.stratasys.com/en/3d-printers/printer-catalog/polyjet/j8-series-printers/j850-prime-3d-printer/",
+    "facts": [
+      {
+        "value": "490×390×200",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "14",
+        "label": "Minimum layer, µm"
+      },
+      {
+        "value": "7",
+        "label": "Materials in one print"
+      },
+      {
+        "value": "500,000+",
+        "label": "Colour combinations†"
+      }
+    ],
+    "footnote": "† Stratasys claim (the same page also states 600,000+). Source: stratasys.com J850 Prime page, read 10 Nov 2026.",
+    "features_heading": "Realism without compromise.",
+    "features": [
+      {
+        "title": "PANTONE-validated colour",
+        "text": "Colour matching that design and marketing teams can approve."
+      },
+      {
+        "title": "Up to seven resins",
+        "text": "Rigid, flexible, clear and tough in one model."
+      },
+      {
+        "title": "Four print modes",
+        "text": "From 14 µm High Quality to 55 µm Super High Speed drafts."
+      },
+      {
+        "title": "Two support materials",
+        "text": "Water-jet removable or soluble."
+      },
+      {
+        "title": "FabriX Innovation Kit",
+        "text": "Print onto fabric and flexible substrates."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j850-prime.webp",
+    "feature_image_alt": "Stratasys J850 Prime",
+    "feature_caption": "J850 Prime · Stratasys",
+    "benefits": [
+      {
+        "title": "Faster models",
+        "text": "Full-colour models in 20 % of the time of traditional methods (Stratasys claim)."
+      },
+      {
+        "title": "Lower cost",
+        "text": "Prototyping cost cut by more than 80 % (Stratasys claim)."
+      },
+      {
+        "title": "Fewer iterations",
+        "text": "Validate designs up to 5× faster (Stratasys claim)."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "490 × 390 × 200 mm (19.3 × 15.35 × 7.9 in.)"
+      },
+      {
+        "label": "Print modes",
+        "value": "High Quality: up to 7 resins, 14 µm · High Mix: up to 7 resins, 27 µm · High Speed: up to 3 resins, 27 µm · Super High Speed: 1 resin, 55 µm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "Under 100 mm: ±100 µm. Over 100 mm: ±200 µm or ±0.06 % of part length, whichever is greater (typical, rigid materials)"
+      },
+      {
+        "label": "Materials",
+        "value": "ToughONE, VeroVivid, VeroUltra Clear, Agilus30, VeroUltra, Digital ABS Plus, DraftGrey"
+      },
+      {
+        "label": "Support",
+        "value": "SUP705 (water-jet removable), SUP705B, SUP706B (soluble)"
+      },
+      {
+        "label": "Colour",
+        "value": "PANTONE validated"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, SDK (API)"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "1,400 × 1,260 × 1,100 mm · 430 kg; material cabinet 1,119 × 656 × 637 mm · 153 kg"
+      },
+      {
+        "label": "Power",
+        "value": "100–120 VAC, 50–60 Hz, 13.5 A, 1 phase; or 220–240 VAC, 50–60 Hz, 7 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, EAC, RCM, R-NZ"
+      }
+    ],
+    "applications_image": "/assets/stratasys/microsoft-laptop-vignette-case-study.webp",
+    "applications_heading": "Prototypes your stakeholders can sign off.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/air-purifier.webp",
+        "title": "Consumer products",
+        "text": "PANTONE-validated prototypes for approvals."
+      },
+      {
+        "image": "/assets/stratasys/nail-polish-packaging.webp",
+        "title": "Packaging",
+        "text": "Transparent, high-fidelity packaging models."
+      },
+      {
+        "image": "/assets/stratasys/medical-printed-3d-anatomical-head-full-color.webp",
+        "title": "Medical models",
+        "text": "Patient-specific and training models."
+      }
+    ],
+    "compare": [
+      "j850-pro",
+      "j826-prime",
+      "j850-core"
+    ],
+    "form_options": [
+      "Design & colour models",
+      "Prototyping",
+      "Packaging",
+      "Medical models"
+    ]
+  }
 }

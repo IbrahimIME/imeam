@@ -9,5 +9,144 @@
   "image": "/assets/stratasys/j850-digital-anatomy-printer.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "Digital Anatomy and MediJet Medical PolyJet",
+    "description": "Stratasys Digital Anatomy · MediJet 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Medical",
+    "eyebrow": "Stratasys Digital Anatomy · MediJet · Medical PolyJet",
+    "headline": "Life-like anatomical models,",
+    "headline_em": "on demand.",
+    "lead": "J850 and J5 Digital Anatomy print models that replicate the look, feel and response of human tissue. J5 MediJet adds biocompatible, sterilisable guides and multicolour models in a compact system.",
+    "spec_sheet": "https://www.stratasys.com/en/3d-printers/printer-catalog/polyjet/j850-digital-anatomy/",
+    "facts": [
+      {
+        "value": "490×390×200",
+        "label": "J850 DA build, mm"
+      },
+      {
+        "value": "140×200×190",
+        "label": "J5 build, mm"
+      },
+      {
+        "value": "14",
+        "label": "J850 DA min layer, µm"
+      },
+      {
+        "value": "300+",
+        "label": "Validated anatomy presets"
+      }
+    ],
+    "footnote": "Source: stratasys.com J850 Digital Anatomy, J5 Digital Anatomy and J5 MediJet pages, read 10 Nov 2026.",
+    "features_heading": "The look, feel and response of real tissue.",
+    "features": [
+      {
+        "title": "Digital Anatomy materials",
+        "text": "TissueMatrix, BoneMatrix, GelMatrix and RadioMatrix."
+      },
+      {
+        "title": "300+ anatomy presets",
+        "text": "Physician-tested, validated presets (J850 DA)."
+      },
+      {
+        "title": "Full colour",
+        "text": "Colour-coded anatomy for planning and teaching."
+      },
+      {
+        "title": "Biocompatible and sterilisable (MediJet)",
+        "text": "Approved materials support steam, gamma, VHP and EtO sterilisation."
+      },
+      {
+        "title": "Compact J5 systems",
+        "text": "Quiet, odour-free and facility-friendly."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j850-digital-anatomy-printer.webp",
+    "feature_image_alt": "Stratasys Digital Anatomy · MediJet",
+    "feature_caption": "Digital Anatomy · MediJet · Stratasys",
+    "benefits": [
+      {
+        "title": "Pre-surgical practice",
+        "text": "Rehearse procedures on patient-specific models."
+      },
+      {
+        "title": "Fewer cadaver and animal models",
+        "text": "Repeatable training models on demand."
+      },
+      {
+        "title": "Cost",
+        "text": "MediJet: 30 % lower cost per part than outsourcing (Stratasys claim)."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Models",
+        "value": "J850 Digital Anatomy, J5 Digital Anatomy, J5 MediJet"
+      },
+      {
+        "label": "Build size",
+        "value": "J850 DA: 490 × 390 × 200 mm · J5: 140 × 200 × 190 mm (1,174 cm² tray)"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "J850 DA: 14 µm (High Quality, 7 materials), 27 µm, 54 µm · J5: down to 18 µm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "J850 DA: ±100 µm under 100 mm; ±200 µm or ±0.06 % over 100 mm · J5: ±150 µm under 100 mm; ±0.15 % over 100 mm (rigid materials)"
+      },
+      {
+        "label": "Materials",
+        "value": "Digital Anatomy: TissueMatrix, BoneMatrix, GelMatrix, RadioMatrix · MediJet: MED615RGD, DraftWhite, Elastico, Digital ABS Plus"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print (Digital Anatomy); Digital Anatomy Creator and GrabCAD Print Pro optional"
+      },
+      {
+        "label": "System size & weight",
+        "value": "J850 DA: 1,400 × 1,260 × 1,100 mm · 430 kg, plus material cabinet · J5: 651 × 661 × 1,511 mm · 228 kg"
+      },
+      {
+        "label": "Power",
+        "value": "J850 DA: 100–120 VAC 13.5 A or 220–240 VAC 7 A, 1 phase · J5: 100–240 VAC, 10 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, EAC. The printers are not FDA-cleared medical devices."
+      }
+    ],
+    "applications_image": "/assets/stratasys/medical-printed-3d-anatomical-head-full-color.webp",
+    "applications_heading": "Planning, training and device testing.",
+    "applications": [
+      {
+        "title": "Point of care",
+        "text": "Patient-specific models for surgical planning."
+      },
+      {
+        "title": "Medical device testing",
+        "text": "Benchtop validation on realistic anatomy."
+      },
+      {
+        "title": "Education and research",
+        "text": "Hands-on training and simulation, including dental presets."
+      }
+    ],
+    "compare": [
+      "dentajet-series",
+      "j850-prime",
+      "j8-series"
+    ],
+    "form_options": [
+      "Surgical planning models",
+      "Medical device testing",
+      "Education & training"
+    ]
+  }
 }

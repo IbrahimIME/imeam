@@ -10,5 +10,139 @@
   "image": "/assets/stratasys/fortus-450mc.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "Fortus 450mc Industrial FDM",
+    "description": "Stratasys Fortus 450mc 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/fdm.mp4",
+    "category": "Industrial",
+    "eyebrow": "Stratasys Fortus 450mc · Industrial FDM",
+    "headline": "Factory-floor ready",
+    "headline_em": "additive manufacturing.",
+    "lead": "A 406 × 355 × 406 mm heated chamber and 18 standard, engineering and high-performance thermoplastics, plus open parameters through OpenAM, for prototypes, durable tooling and end-use parts.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/fdm-printers/fortus-450mc/redesign-2023/pss_fdm_fortus450mc_0826a.pdf",
+    "facts": [
+      {
+        "value": "406×355×406",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "18",
+        "label": "Thermoplastics + OpenAM"
+      },
+      {
+        "value": "±0.127",
+        "label": "Accuracy, mm*"
+      },
+      {
+        "value": "2 + 2",
+        "label": "Model + support bays"
+      }
+    ],
+    "footnote": "* or ±0.0015 mm/mm, whichever is greater. Source: stratasys.com Fortus 450mc page, read 10 Nov 2026.",
+    "features_heading": "A mid-size workhorse for engineering materials.",
+    "features": [
+      {
+        "title": "Fully heated build chamber",
+        "text": "Accuracy with high-temperature materials."
+      },
+      {
+        "title": "Colour options",
+        "text": "Several materials, including ULTEM, come in colours, cutting paint steps."
+      },
+      {
+        "title": "Large T40 tips",
+        "text": "Faster deposition on large parts."
+      },
+      {
+        "title": "OpenAM",
+        "text": "Optional licence to tune parameters and run open materials."
+      },
+      {
+        "title": "MTConnect",
+        "text": "Factory data integration."
+      }
+    ],
+    "feature_image": "/assets/stratasys/fortus-450mc.webp",
+    "feature_image_alt": "Stratasys Fortus 450mc",
+    "feature_caption": "Fortus 450mc · Stratasys",
+    "benefits": [
+      {
+        "title": "Spacious build",
+        "text": "Larger parts or several smaller parts per build."
+      },
+      {
+        "title": "Small footprint",
+        "text": "Fits crowded shop floors."
+      },
+      {
+        "title": "Reliability",
+        "text": "Maximum part yield and uptime."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "406 × 355 × 406 mm (16 × 14 × 16 in.)"
+      },
+      {
+        "label": "Accuracy",
+        "value": "±0.127 mm or ±0.0015 mm/mm, whichever is greater; Z adds slice-height tolerance (95 % dimensional yield)"
+      },
+      {
+        "label": "Materials",
+        "value": "Includes FDM PA6/66-GF30-FR, FDM Nylon 12CF, ULTEM 9085, ULTEM 1010, Antero 800NA (PEKK), PC-ESD, VICTREX AM 200 PEEK, ASA (12 colours), ABS-M30i (biocompatible); open materials with OpenAM"
+      },
+      {
+        "label": "Material delivery",
+        "value": "Two bays each for model and support canisters, automatic changeover; Fortus FDC optional"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, GrabCAD Print Pro, Insight, Control Center; OpenAM optional"
+      },
+      {
+        "label": "Network",
+        "value": "Wired TCP/IPv6, 10/100 Base-T Ethernet"
+      },
+      {
+        "label": "System size & weight",
+        "value": "129.5 × 90.2 × 198.4 cm · 601 kg"
+      },
+      {
+        "label": "Power",
+        "value": "208 VAC, 3-phase, 50/60 Hz, 18 A"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, cTUVus, RCM, EAC, FCC Part B"
+      }
+    ],
+    "applications_image": "/assets/stratasys/fdm-banner-img-768x389.webp",
+    "applications_heading": "Prototypes, tooling and end-use parts in engineering plastics.",
+    "applications_text": "From ABS and ASA to ULTEM, PEKK and PEEK, on one machine.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Functional product iterations."
+      },
+      {
+        "image": "/assets/stratasys/tool-handle-in-hands.webp",
+        "title": "Durable tooling",
+        "text": "Jigs, fixtures and manufacturing aids."
+      },
+      {
+        "image": "/assets/stratasys/jw-speaker-custom-motorcycle-headlight-3d-printed-housing.webp",
+        "title": "Production parts",
+        "text": "On-demand low-volume and bridge-to-production parts."
+      }
+    ],
+    "compare": [
+      "f900",
+      "f3300",
+      "f370cr-f190cr"
+    ]
+  }
 }

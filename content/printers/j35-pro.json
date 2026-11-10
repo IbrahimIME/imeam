@@ -10,5 +10,151 @@
   "image": "/assets/stratasys/j35-pro.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "J35 Pro Office Multi-Material PolyJet",
+    "description": "Stratasys J35 Pro 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Office",
+    "eyebrow": "Stratasys J35 Pro · PolyJet",
+    "headline": "The versatile",
+    "headline_em": "multi-material office printer.",
+    "lead": "Up to three materials on one tray (rigid, rubber-like, clear and biocompatible) in a compact, quiet printer that costs less than other PolyJet systems†.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/polyjet/j35-pro-printer/pss_pj_j35-pro_1225a.pdf",
+    "facts": [
+      {
+        "value": "1,174",
+        "label": "Print tray, cm²"
+      },
+      {
+        "value": "18.75",
+        "label": "Layer (HQS), µm"
+      },
+      {
+        "value": "3",
+        "label": "Materials in one print"
+      },
+      {
+        "value": "98",
+        "label": "Weight, kg"
+      }
+    ],
+    "footnote": "† Stratasys claim. Source: stratasys.com J35 Pro page, read 10 Nov 2026.",
+    "features_heading": "Multi-material PolyJet, desk-sized.",
+    "features": [
+      {
+        "title": "Multi-material parts",
+        "text": "Several materials in one print."
+      },
+      {
+        "title": "High-fidelity prototypes",
+        "text": "Detail close to the final product."
+      },
+      {
+        "title": "Easy workflow",
+        "text": "Design, import, print."
+      },
+      {
+        "title": "Office-friendly",
+        "text": "Low maintenance, small footprint, quiet, with air filtration."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j35-pro.webp",
+    "feature_image_alt": "Stratasys J35 Pro",
+    "feature_caption": "J35 Pro · Stratasys",
+    "benefits": [
+      {
+        "title": "Realistic CMF prototypes",
+        "text": "Greyscale, transparency, texture and moving parts."
+      },
+      {
+        "title": "Lower investment",
+        "text": "Less than other PolyJet systems (Stratasys claim)."
+      },
+      {
+        "title": "Versatile materials",
+        "text": "Rubber-like, high-impact, rigid, translucent and biocompatible."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "Round print tray up to 1,174 cm²; maximum model height 155 mm"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "HQS mode, 18.75 µm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "Under 100 mm: ±150 µm. Over 100 mm: ±0.15 % of part length (rigid materials, 1σ)"
+      },
+      {
+        "label": "Materials",
+        "value": "ToughONE, VeroUltra, VeroUltra Clear, DraftGrey, Elastico, Digital ABS Plus"
+      },
+      {
+        "label": "Support",
+        "value": "SUP710S, WSS150 (water-soluble)"
+      },
+      {
+        "label": "Materials on board",
+        "value": "Up to 3 simultaneously"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, SDK (API)"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "651 × 661 × 774 mm · 98 kg"
+      },
+      {
+        "label": "Power",
+        "value": "100–240 VAC, 50–60 Hz, 10 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, EAC, cTUVus, CB, RCM"
+      }
+    ],
+    "applications_image": "/assets/stratasys/prototyping.webp",
+    "applications_heading": "Design and functional prototypes, in the office.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/nail-polish-packaging.webp",
+        "title": "Packaging",
+        "text": "Realistic packaging prototypes."
+      },
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Concept-to-test cycles."
+      },
+      {
+        "image": "/assets/stratasys/microsoft-laptop-prototype.webp",
+        "title": "Design",
+        "text": "CMF and design models."
+      }
+    ],
+    "compare": [
+      "j55-prime",
+      "j850-core",
+      "f170-f370"
+    ],
+    "form_options": [
+      "Prototyping",
+      "Design models",
+      "Education"
+    ]
+  }
 }

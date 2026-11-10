@@ -10,5 +10,156 @@
   "image": "/assets/stratasys/f870-1.webp",
   "image_alt": "",
   "new": true,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "F870 Large-Format FDM for Tooling",
+    "description": "Stratasys F870 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/fdm.mp4",
+    "category": "Industrial",
+    "eyebrow": "Stratasys F870 · Industrial FDM",
+    "headline": "Large-format FDM,",
+    "headline_em": "purpose-built for factory-floor tooling.",
+    "lead": "A 1,000 × 610 × 610 mm chamber heated to 95 °C, integrated material drying and four 4,100 cm³ spools with automatic changeover, so tooling, fixtures and end-of-arm tools print in-house, unattended for up to two weeks†.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/fdm-printers/f870-printer/pss_fdm_f870_1026a.pdf",
+    "facts": [
+      {
+        "value": "1000×610×610",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "95 °C",
+        "label": "Fully heated chamber"
+      },
+      {
+        "value": "9",
+        "label": "Materials"
+      },
+      {
+        "value": "2 weeks",
+        "label": "Unattended printing†"
+      }
+    ],
+    "footnote": "† Stratasys claim (up to). Source: stratasys.com F870 page, read 10 Nov 2026.",
+    "features_heading": "Tooling in days, not weeks.",
+    "features": [
+      {
+        "title": "Integrated material drying",
+        "text": "Regenerative drying bays keep filament print-ready."
+      },
+      {
+        "title": "4,100 cm³ spools",
+        "text": "Four spools with automatic changeover, shared with the F3300."
+      },
+      {
+        "title": "Three print heads",
+        "text": "N14 for detail, N20H for Nylon 12CF, N25 for up to 2× ASA throughput (Stratasys claim)."
+      },
+      {
+        "title": "Tool-free head changes",
+        "text": "Swap print heads without tools."
+      },
+      {
+        "title": "FDM Nylon 12CF",
+        "text": "Lightweight, high-strength carbon-fibre parts."
+      }
+    ],
+    "feature_image": "/assets/stratasys/f870-1.webp",
+    "feature_image_alt": "Stratasys F870",
+    "feature_caption": "F870 · Stratasys",
+    "benefits": [
+      {
+        "title": "In-house tooling",
+        "text": "Make fixtures and EOAT on site instead of outsourcing machining."
+      },
+      {
+        "title": "Long unattended runs",
+        "text": "Up to two weeks between material changes (Stratasys claim)."
+      },
+      {
+        "title": "Lower total cost",
+        "text": "Fewer failed builds and less operator labour."
+      },
+      {
+        "title": "Scalable materials",
+        "text": "Nine materials at launch on a spool format shared with the F3300."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "1,000 × 610 × 610 mm (39.4 × 24 × 24 in.), 372,000 cm³; diagonal 1,171 mm"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "N14: 0.18, 0.25 or 0.33 mm · N20H: 0.25 mm · N25: 0.33 mm"
+      },
+      {
+        "label": "Throughput",
+        "value": "N14 up to 25 cm³/h · N20H up to 21 cm³/h · N25 up to 66 cm³/h (Stratasys figures)"
+      },
+      {
+        "label": "Accuracy",
+        "value": "XY ±0.254 mm or ±0.002 mm/mm; Z ±0.200 mm or ±0.002 mm/mm, plus 1 layer height (whichever is greater, 95 % dimensional yield)"
+      },
+      {
+        "label": "Materials",
+        "value": "FDM Nylon 12CF, ABS-M30 Black, FDM ASA (White, Ivory, Light Gray, Black, Red, Yellow), FDM ABS Draft (Gray)"
+      },
+      {
+        "label": "Support",
+        "value": "SR-35 soluble support"
+      },
+      {
+        "label": "Material delivery",
+        "value": "4 × 4,100 cm³ spools, automatic changeover, integrated drying"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, Insight, MTConnect"
+      },
+      {
+        "label": "System size & weight",
+        "value": "175 × 124 × 196 cm · 817 kg"
+      },
+      {
+        "label": "Power",
+        "value": "3-phase, 208 V, 30 A; no shop air needed (integrated vacuum pump)"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "15–30 °C, 30–70 % RH; 99 cm clearance on each side"
+      }
+    ],
+    "applications_image": "/assets/stratasys/automotive-bumper-on-paint-line-with-3d-printed-masking-tool.webp",
+    "applications_heading": "The tools your production line needs, made on site.",
+    "applications_text": "End-of-arm tooling, fixtures, gauges and ergonomic aids, printed in hours and replaced as the line changes.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/tool-handle-in-hands.webp",
+        "title": "End-of-arm tooling",
+        "text": "Lightweight Nylon 12CF replacements for machined aluminium."
+      },
+      {
+        "image": "/assets/stratasys/automotive-bumper-on-paint-line-with-3d-printed-masking-tool.webp",
+        "title": "Fixtures, jigs and gauges",
+        "text": "Assembly fixtures and check gauges made in-house."
+      },
+      {
+        "image": "/assets/stratasys/woman-finishing-3d-printed-fdm-part_-stratasys-direct.webp",
+        "title": "Ergonomic aids",
+        "text": "Operator-specific hand tools and lift assists."
+      }
+    ],
+    "compare": [
+      "f3300",
+      "f770",
+      "f900"
+    ],
+    "form_options": [
+      "Tooling, jigs & fixtures",
+      "End-of-arm tooling",
+      "Production parts"
+    ]
+  }
 }

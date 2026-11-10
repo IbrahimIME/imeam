@@ -10,5 +10,147 @@
   "image": "/assets/stratasys/f770.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "F770 Large-Format FDM",
+    "description": "Stratasys F770 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/fdm.mp4",
+    "category": "Large format",
+    "eyebrow": "Stratasys F770 · Large-format FDM",
+    "headline": "Industrial-scale printing.",
+    "headline_em": "Simplified.",
+    "lead": "A 1,000 × 610 × 610 mm fully heated chamber, which Stratasys says is the widest in the X direction on the market†, for full-size prototypes, long fixtures and one-piece parts, with soluble support and remote monitoring.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/fdm-printers/f770-printer/pss_fdm_f770_0825a.pdf",
+    "facts": [
+      {
+        "value": "1000×610×610",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "1,171",
+        "label": "Max diagonal, mm"
+      },
+      {
+        "value": "±0.254",
+        "label": "XY accuracy, mm*"
+      },
+      {
+        "value": "2.3×",
+        "label": "Speed with T25 head†"
+      }
+    ],
+    "footnote": "* or ±0.002 mm/mm, whichever is greater. † Stratasys claim (T25: up to 2.3×). Source: stratasys.com F770 page, read 10 Nov 2026.",
+    "features_heading": "Big parts without the big-machine complexity.",
+    "features": [
+      {
+        "title": "Linear motors",
+        "text": "Low-maintenance, precise gantry motion."
+      },
+      {
+        "title": "Three layer resolutions",
+        "text": "Plus adaptive slice height for speed or detail."
+      },
+      {
+        "title": "Fully heated chamber",
+        "text": "The widest in the X direction on the market (Stratasys claim)."
+      },
+      {
+        "title": "Soluble support",
+        "text": "No design-for-manufacturability limits on complex parts."
+      },
+      {
+        "title": "Remote monitoring",
+        "text": "Built-in camera with GrabCAD Print and Insight."
+      }
+    ],
+    "feature_image": "/assets/stratasys/f770.webp",
+    "feature_image_alt": "Stratasys F770",
+    "feature_caption": "F770 · Stratasys",
+    "benefits": [
+      {
+        "title": "Industrial capability",
+        "text": "A large build chamber for big parts."
+      },
+      {
+        "title": "Repeatable results",
+        "text": "Proven Stratasys FDM technology."
+      },
+      {
+        "title": "Shop-floor integration",
+        "text": "MTConnect with GrabCAD Print Pro."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "1,000 × 610 × 610 mm (39.4 × 24 × 24 in.), 372,000 cm³; diagonal 1,171 mm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "XY ±0.254 mm or ±0.002 mm/mm; Z ±0.200 mm or ±0.002 mm/mm, plus 1 layer height (whichever is greater, 95 % dimensional yield)"
+      },
+      {
+        "label": "Materials",
+        "value": "ASA (12 colours), ABS-M30"
+      },
+      {
+        "label": "Support",
+        "value": "Breakaway and soluble FDM support"
+      },
+      {
+        "label": "Material delivery",
+        "value": "3,277 cm³ coil box"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, GrabCAD Print Pro, Insight, Control Center, MTConnect enabled"
+      },
+      {
+        "label": "Network",
+        "value": "Wi-Fi IEEE 802.11 b/g/n"
+      },
+      {
+        "label": "System size & weight",
+        "value": "175 × 124 × 196 cm · 658 kg"
+      },
+      {
+        "label": "Power",
+        "value": "3-phase, 208 V, 30 A, 5-wire, 47–63 Hz"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "15–30 °C, 30–70 % RH"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, cTUVus, RCM, EAC, FCC Part B"
+      }
+    ],
+    "applications_image": "/assets/stratasys/car-interior-3d-printed-product-parts.webp",
+    "applications_heading": "Full-size parts in one piece.",
+    "applications_text": "Long prototypes, large fixtures and parts that would otherwise be printed in sections and bonded.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/car-interior-3d-printed-product-parts.webp",
+        "title": "Full-scale prototypes",
+        "text": "Large prototypes printed whole."
+      },
+      {
+        "image": "/assets/stratasys/tool-handle-in-hands.webp",
+        "title": "Jigs and fixtures",
+        "text": "Tooling for the production floor."
+      },
+      {
+        "image": "/assets/stratasys/jw-speaker-custom-motorcycle-headlight-3d-printed-housing.webp",
+        "title": "Production parts",
+        "text": "Low-volume and bridge-to-production parts."
+      }
+    ],
+    "compare": [
+      "f870",
+      "f900",
+      "f3300"
+    ]
+  }
 }

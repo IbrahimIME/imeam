@@ -9,5 +9,132 @@
   "image": "/assets/stratasys/origin-two.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "Origin Two P3 DLP Production 3D Printer",
+    "description": "Stratasys Origin Two 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/p3.mp4",
+    "category": "Production",
+    "eyebrow": "Stratasys Origin Two · P3 DLP",
+    "headline": "Precision manufacturing.",
+    "headline_em": "Redefined.",
+    "lead": "P3 DLP for end-use parts with an injection-moulding-like surface finish: up to 50 µm accuracy†, 19 validated materials and open resins through OpenAM.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/p3/origin-two/redesign/pss_p3_origin_two_0725a.pdf",
+    "facts": [
+      {
+        "value": "192×108×370",
+        "label": "Build volume, mm"
+      },
+      {
+        "value": "±50",
+        "label": "Accuracy, µm†"
+      },
+      {
+        "value": "2",
+        "label": "Surface roughness, µm Ra†"
+      },
+      {
+        "value": "19",
+        "label": "Validated materials"
+      }
+    ],
+    "footnote": "† Stratasys claims: ±50 µm XY and Z for validated applications (±100 µm general); Ra up to 2 µm. Source: stratasys.com Origin Two page, read 10 Nov 2026.",
+    "features_heading": "Tolerances and finish for end-use parts.",
+    "features": [
+      {
+        "title": "Accuracy and tolerances",
+        "text": "Up to 50 µm accuracy with projector technology."
+      },
+      {
+        "title": "Moulding-like finish",
+        "text": "A patented pneumatic mechanism reduces separation forces."
+      },
+      {
+        "title": "Repeatability",
+        "text": "More than 95 % of prints within ±50 µm across printers and build heads (Stratasys claim)."
+      },
+      {
+        "title": "Heated chamber",
+        "text": "Up to 60 °C for advanced materials."
+      },
+      {
+        "title": "OpenAM",
+        "text": "Third-party and custom resins under an open material licence."
+      }
+    ],
+    "feature_image": "/assets/stratasys/origin-two.webp",
+    "feature_image_alt": "Stratasys Origin Two",
+    "feature_caption": "Origin Two · Stratasys",
+    "benefits": [
+      {
+        "title": "Material flexibility",
+        "text": "Validated profiles or your own."
+      },
+      {
+        "title": "End-to-end workflow",
+        "text": "Validated post-processing for production-grade results."
+      },
+      {
+        "title": "On-demand manufacturing",
+        "text": "Short runs, repeatable across jobs and printers."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build volume",
+        "value": "192 × 108 × 370 mm (7,672 cm³); max diagonal part length 220 mm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "±50 µm XY and Z (validated applications); ±100 µm (general)"
+      },
+      {
+        "label": "Surface finish",
+        "value": "Up to 2 µm Ra"
+      },
+      {
+        "label": "Light source",
+        "value": "DLP projector, 385 nm"
+      },
+      {
+        "label": "Build chamber",
+        "value": "Heated up to 60 °C"
+      },
+      {
+        "label": "Materials",
+        "value": "19 Stratasys-validated materials; open materials with OpenAM"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print Pro for Origin, OpenAM"
+      }
+    ],
+    "applications_image": "/assets/stratasys/connectivity-circle.webp",
+    "applications_heading": "Small, precise parts in production volumes.",
+    "applications": [
+      {
+        "title": "Connectors and fine features",
+        "text": "Moulding-quality repeatability (Stratasys: Cpk above 1.33)."
+      },
+      {
+        "title": "Industrial components",
+        "text": "Economical low-volume production in engineered materials."
+      },
+      {
+        "title": "Tooling",
+        "text": "Jigs, fixtures and aids in hours, at 20 % of the cost (Stratasys claim)."
+      }
+    ],
+    "compare": [
+      "h350",
+      "neo800-neo450s",
+      "j850-pro"
+    ],
+    "form_options": [
+      "Production parts",
+      "Tooling, jigs & fixtures",
+      "Prototyping"
+    ]
+  }
 }

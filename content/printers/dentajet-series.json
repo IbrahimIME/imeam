@@ -9,5 +9,157 @@
   "image": "/assets/stratasys/j5-dentajet.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "DentaJet Series Dental PolyJet",
+    "description": "Stratasys DentaJet series 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Dental",
+    "eyebrow": "Stratasys DentaJet series · Dental PolyJet",
+    "headline": "Multi-material",
+    "headline_em": "dental production.",
+    "lead": "Three PolyJet printers for dental labs: J3 DentaJet (up to three materials, countertop), DentaJet XL (two materials, 4 kg cartridges, high volume) and J5 DentaJet (up to five materials, TrueDent dentures and full-colour models).",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/polyjet/dentajet-series/br_pj_dentajet-series_1125a.pdf",
+    "facts": [
+      {
+        "value": "140×200×190",
+        "label": "Max part size, mm"
+      },
+      {
+        "value": "18",
+        "label": "Minimum layer, µm"
+      },
+      {
+        "value": "1,174",
+        "label": "Print area, cm²"
+      },
+      {
+        "value": "5",
+        "label": "Materials per job (J5)"
+      }
+    ],
+    "footnote": "Source: stratasys.com J3 DentaJet, DentaJet XL and J5 DentaJet pages, read 10 Nov 2026.",
+    "features_heading": "One tray, many cases.",
+    "features": [
+      {
+        "title": "Multi-material jobs",
+        "text": "Models, guides and gingiva masks on one tray."
+      },
+      {
+        "title": "4 kg cartridges (XL)",
+        "text": "Hot-swappable, fewer material changes."
+      },
+      {
+        "title": "Super High Speed (XL)",
+        "text": "Up to 30 % faster for high volume (Stratasys claim)."
+      },
+      {
+        "title": "Full colour and TrueDent (J5)",
+        "text": "Monolithic dentures and shade-matched models."
+      },
+      {
+        "title": "GrabCAD Print",
+        "text": "Set-up, monitoring and job management."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j5-dentajet.webp",
+    "feature_image_alt": "Stratasys DentaJet series",
+    "feature_caption": "DentaJet series · Stratasys",
+    "benefits": [
+      {
+        "title": "More capacity",
+        "text": "Unattended, multi-material jobs."
+      },
+      {
+        "title": "Lower cost per part",
+        "text": "Up to 67 % lower on DentaJet XL (Stratasys claim)."
+      },
+      {
+        "title": "Low-touch operation",
+        "text": "One technician can run several printers."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Models",
+        "value": "J3 DentaJet, DentaJet XL, J5 DentaJet"
+      },
+      {
+        "label": "Build size",
+        "value": "Print area 1,174 cm²; max part 140 × 200 × 190 mm"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "Down to 18 µm; XL Super High Speed 61.875 µm (aligner arches)"
+      },
+      {
+        "label": "Materials per job",
+        "value": "J3: up to 3 · XL: up to 2 · J5: up to 5 (each plus support)"
+      },
+      {
+        "label": "Materials",
+        "value": "MED610-DSG Rigid Clear, MED620S Rigid Opaque, MED625FLX Flexible Clear, Elastico/VeroMagenta Flexible Pink, Vero White; J5 adds VeroVivid colours and TrueDent"
+      },
+      {
+        "label": "Support",
+        "value": "SUP711 (water-jet removable)"
+      },
+      {
+        "label": "Regulatory",
+        "value": "TrueDent: FDA-cleared Class II and CE-marked Class IIa; MED610-DSG: FDA-registered and CE-marked Class I (per Stratasys)"
+      },
+      {
+        "label": "System size & weight",
+        "value": "J3: 651 × 661 × 774 mm · 98 kg · XL: 651 × 661 × 1,511 mm · 199 kg · J5: 651 × 661 × 1,511 mm · 228 kg"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      },
+      {
+        "label": "Power",
+        "value": "100–240 VAC, 50–60 Hz, 10 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, cTUVus, Industry Canada, RCM"
+      }
+    ],
+    "applications_image": "/assets/stratasys/gloved-hands-holding-truedent-denture.webp",
+    "applications_heading": "From implant guides to monolithic dentures.",
+    "applications": [
+      {
+        "title": "Implant cases and surgical guides",
+        "text": "Clear, accurate guides with models and gingiva masks on one tray."
+      },
+      {
+        "title": "Models and aligners",
+        "text": "Crown and bridge models and clear-aligner arches at volume."
+      },
+      {
+        "title": "TrueDent dentures (J5)",
+        "text": "Monolithic, multi-colour dentures, partials and try-ins."
+      }
+    ],
+    "compare": [
+      "digital-anatomy-medijet",
+      "j55-prime",
+      "j35-pro"
+    ],
+    "form_options": [
+      "Dental models",
+      "Surgical guides",
+      "Dentures (TrueDent)",
+      "Aligner models"
+    ]
+  }
 }

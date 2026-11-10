@@ -10,5 +10,142 @@
   "image": "/assets/stratasys/j850-pro.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "J850 Pro Multi-Material PolyJet",
+    "description": "Stratasys J850 Pro 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Professional",
+    "eyebrow": "Stratasys J850 Pro · PolyJet",
+    "headline": "A functional, engineering-grade",
+    "headline_em": "multi-material platform.",
+    "lead": "Up to seven materials in one print, with 14-micron detail for final checks and a 55-micron Super High Speed mode for fast concept iterations.",
+    "spec_sheet": "https://www.stratasys.com/en/3d-printers/printer-catalog/polyjet/j8-series-printers/j850-pro-3d-printer/",
+    "facts": [
+      {
+        "value": "490×390×200",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "14",
+        "label": "Minimum layer, µm"
+      },
+      {
+        "value": "7",
+        "label": "Materials in one print"
+      },
+      {
+        "value": "55",
+        "label": "Super High Speed layer, µm"
+      }
+    ],
+    "footnote": "Source: stratasys.com J850 Pro page, read 10 Nov 2026.",
+    "features_heading": "Go beyond basic prototypes.",
+    "features": [
+      {
+        "title": "Up to seven materials",
+        "text": "Functional digital material combinations in one model."
+      },
+      {
+        "title": "Super High Speed",
+        "text": "55 µm drafts for early concept iterations."
+      },
+      {
+        "title": "Two support materials",
+        "text": "Water-jet removable or soluble."
+      },
+      {
+        "title": "GrabCAD Print",
+        "text": "Direct CAD import, colour matching and job management."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j850-pro.webp",
+    "feature_image_alt": "Stratasys J850 Pro",
+    "feature_caption": "J850 Pro · Stratasys",
+    "benefits": [
+      {
+        "title": "Faster iteration",
+        "text": "Days, not weeks (Stratasys claim)."
+      },
+      {
+        "title": "Lower cost",
+        "text": "Prototyping cost cut by more than 80 % (Stratasys claim)."
+      },
+      {
+        "title": "Faster validation",
+        "text": "Up to 5× faster (Stratasys claim)."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "490 × 390 × 200 mm (19.3 × 15.35 × 7.9 in.)"
+      },
+      {
+        "label": "Print modes",
+        "value": "High Quality: up to 7 resins, 14 µm · High Mix: up to 7 resins, 27 µm · High Speed: up to 3 resins, 27 µm · Super High Speed: 1 resin, 55 µm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "Under 100 mm: ±100 µm. Over 100 mm: ±200 µm or ±0.06 % of part length, whichever is greater (typical, rigid materials)"
+      },
+      {
+        "label": "Materials",
+        "value": "ToughONE, DraftGrey, Digital ABS Plus, Agilus30, VeroUltra Clear"
+      },
+      {
+        "label": "Support",
+        "value": "SUP705 (water-jet removable), SUP706B (soluble)"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "1,400 × 1,260 × 1,100 mm · 430 kg; material cabinet 1,119 × 656 × 637 mm · 153 kg"
+      },
+      {
+        "label": "Power",
+        "value": "100–120 VAC, 50–60 Hz, 13.5 A, 1 phase; or 220–240 VAC, 50–60 Hz, 7 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, EAC, RCM, R-NZ"
+      }
+    ],
+    "applications_image": "/assets/stratasys/car-interior-3d-printed-product-parts.webp",
+    "applications_heading": "Functional prototypes across the development cycle.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/car-interior-3d-printed-product-parts.webp",
+        "title": "Automotive parts",
+        "text": "ABS-like durability and a range of Shore values for fit checks."
+      },
+      {
+        "image": "/assets/stratasys/microsoft-laptop-prototype.webp",
+        "title": "Design",
+        "text": "From concept to realistic models."
+      },
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Fast design iteration."
+      }
+    ],
+    "compare": [
+      "j850-prime",
+      "j850-core",
+      "j826-prime"
+    ]
+  }
 }

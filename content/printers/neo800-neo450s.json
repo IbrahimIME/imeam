@@ -10,5 +10,155 @@
   "image": "/assets/stratasys/neo800.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "Neo800+ and Neo450s Stereolithography",
+    "description": "Stratasys Neo800+ · Neo450s 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/sla.mp4",
+    "category": "Large format",
+    "eyebrow": "Stratasys Neo800+ · Neo450s · SLA",
+    "headline": "Large-format SLA,",
+    "headline_em": "open resin, fine detail.",
+    "lead": "Open-resin stereolithography for accurate prototypes, jigs and investment-casting patterns. Neo800+ builds up to 800 × 800 × 600 mm with a 4 W laser; Neo450s fits 450 × 450 × 400 mm into a compact frame.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/neo-series/neo-printer-800/pss_sl_neo800plus_0526a.pdf",
+    "facts": [
+      {
+        "value": "800×800×600",
+        "label": "Neo800+ build, mm"
+      },
+      {
+        "value": "450×450×400",
+        "label": "Neo450s build, mm"
+      },
+      {
+        "value": "50–200",
+        "label": "Layer, µm"
+      },
+      {
+        "value": "±0.1",
+        "label": "Accuracy under 100 mm, mm"
+      }
+    ],
+    "footnote": "Source: stratasys.com Neo series and Neo450s pages, read 10 Nov 2026.",
+    "features_heading": "Smooth surfaces, sharp detail, any 355 nm resin.",
+    "features": [
+      {
+        "title": "Open resin system",
+        "text": "Runs commercially available 355 nm SLA resins, including Somos."
+      },
+      {
+        "title": "Titanium software",
+        "text": "Real-time updates, reports and remote diagnostics."
+      },
+      {
+        "title": "HD and SD modes (Neo450s)",
+        "text": "Detail or speed per build."
+      },
+      {
+        "title": "Dynamic beam size (Neo450s)",
+        "text": "80–750 µm, variable during the build."
+      },
+      {
+        "title": "Fast scanning (Neo800+)",
+        "text": "Up to 20 m/s; up to 50 % faster builds (Stratasys claim)."
+      }
+    ],
+    "feature_image": "/assets/stratasys/neo800.webp",
+    "feature_image_alt": "Stratasys Neo800+ · Neo450s",
+    "feature_caption": "Neo800+ · Neo450s · Stratasys",
+    "benefits": [
+      {
+        "title": "Surface quality",
+        "text": "Smooth surfaces and accurate detail."
+      },
+      {
+        "title": "Less post-processing",
+        "text": "Up to 50 % less on Neo450s (Stratasys claim)."
+      },
+      {
+        "title": "Material freedom",
+        "text": "Choose the resin for each job."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build volume",
+        "value": "Neo800+: 800 × 800 × 600 mm (half vat 800 × 800 × 300) · Neo450s: 450 × 450 × 400 mm (half 200, short 50 mm high)"
+      },
+      {
+        "label": "Laser",
+        "value": "Solid-state frequency-tripled Nd:YVO4, 355 nm; Neo800+ 4 W, Neo450s 2 W"
+      },
+      {
+        "label": "Scan speed",
+        "value": "Neo800+ up to 20 m/s · Neo450s up to 10 m/s"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "50–200 µm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "Under 100 mm: ±0.1 mm. Over 100 mm: ±0.15 % (Neo800+), ±0.1 % (Neo450s)"
+      },
+      {
+        "label": "Minimum feature",
+        "value": "XY 0.17 mm (Neo800+), 0.15 mm (Neo450s); Z 0.4 mm"
+      },
+      {
+        "label": "Materials",
+        "value": "Open 355 nm resin system; Somos resins recommended (e.g. WaterShed XC 11122, WaterShed AF, Taurus, EvoLVe 128, PerFORM)"
+      },
+      {
+        "label": "Software",
+        "value": "Titanium, GrabCAD, Materialise Magics; Windows 10 IoT Enterprise"
+      },
+      {
+        "label": "Network",
+        "value": "IEEE 802.3, 802.3u, 802.3ab Ethernet"
+      },
+      {
+        "label": "System size & weight",
+        "value": "Neo800+: 1,350 × 1,630 × 2,300 mm · 800 kg · Neo450s: 1,050 × 1,225 × 1,900 mm · 600 kg"
+      },
+      {
+        "label": "Power",
+        "value": "Neo800+: 208–240 V, 50/60 Hz, 1,900 W max · Neo450s: 110–120 V (550 W max) or 220–240 V (1,300 W max), 50/60 Hz"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "20–23 °C (max change ±1 °C/h), 20–50 % RH non-condensing"
+      }
+    ],
+    "applications_image": "/assets/stratasys/investment-casting-banner.webp",
+    "applications_heading": "Accurate models, big or small.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Precision prototyping",
+        "text": "Concept, communication and fit-and-form models."
+      },
+      {
+        "image": "/assets/stratasys/tool-handle-in-hands.webp",
+        "title": "Jigs and fixtures",
+        "text": "Custom, lightweight tooling."
+      },
+      {
+        "image": "/assets/stratasys/investment-casting-banner.webp",
+        "title": "Investment casting",
+        "text": "Master patterns, e.g. in antimony-free Somos WaterShed AF."
+      }
+    ],
+    "compare": [
+      "origin-two",
+      "h350",
+      "j850-prime"
+    ],
+    "form_options": [
+      "Prototyping",
+      "Investment casting patterns",
+      "Tooling, jigs & fixtures"
+    ]
+  }
 }

@@ -10,5 +10,151 @@
   "image": "/assets/stratasys/j826.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "J826 Prime Compact Full-Colour PolyJet",
+    "description": "Stratasys J826 Prime 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Professional",
+    "eyebrow": "Stratasys J826 Prime · PolyJet",
+    "headline": "Full colour,",
+    "headline_em": "compact footprint.",
+    "lead": "J8 Series performance in a smaller system: up to seven materials, 14-micron layers and PANTONE-validated colour on a 255 × 252 × 200 mm tray.",
+    "spec_sheet": "https://www.stratasys.com/en/3d-printers/printer-catalog/polyjet/j8-series-printers/j826-prime-3d-printer/",
+    "facts": [
+      {
+        "value": "255×252×200",
+        "label": "Build size, mm"
+      },
+      {
+        "value": "14",
+        "label": "Minimum layer, µm"
+      },
+      {
+        "value": "7",
+        "label": "Materials in one print"
+      },
+      {
+        "value": "1,970",
+        "label": "PANTONE colours"
+      }
+    ],
+    "footnote": "Source: stratasys.com J826 Prime page, read 10 Nov 2026.",
+    "features_heading": "Realistic prototypes for smaller teams.",
+    "features": [
+      {
+        "title": "Seven material channels",
+        "text": "Flexible to rigid and opaque to transparent."
+      },
+      {
+        "title": "High-speed modes",
+        "text": "Including Super High Speed for drafts."
+      },
+      {
+        "title": "PANTONE validation",
+        "text": "Colour matching to 1,970 printable colours."
+      },
+      {
+        "title": "Compact footprint",
+        "text": "Fits a design office."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j826.webp",
+    "feature_image_alt": "Stratasys J826 Prime",
+    "feature_caption": "J826 Prime · Stratasys",
+    "benefits": [
+      {
+        "title": "More iterations",
+        "text": "5× more design iterations in the same time (Stratasys claim)."
+      },
+      {
+        "title": "Lower cost",
+        "text": "80 % lower prototyping cost (Stratasys claim)."
+      },
+      {
+        "title": "Accessible",
+        "text": "Positioned for small businesses."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "255 × 252 × 200 mm (10 × 9.9 × 7.9 in.)"
+      },
+      {
+        "label": "Print modes",
+        "value": "High Quality: up to 7 resins, 14 µm · High Mix: up to 7 resins, 27 µm · High Speed: up to 3 resins, 27 µm · Super High Speed: 1 resin, 55 µm"
+      },
+      {
+        "label": "Accuracy",
+        "value": "Under 100 mm: ±100 µm. Over 100 mm: ±200 µm (typical, rigid materials)"
+      },
+      {
+        "label": "Materials",
+        "value": "ToughONE, VeroVivid, VeroUltra Clear, Agilus30 Colors, VeroUltra, Digital ABS Plus, DraftGrey"
+      },
+      {
+        "label": "Support",
+        "value": "SUP705 (water-jet removable), SUP705B, SUP706B (soluble)"
+      },
+      {
+        "label": "Colour",
+        "value": "PANTONE validated to 1,970 colours"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, SDK (API)"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "820 × 1,310 × 665 mm · 234 kg; material cabinet 1,119 × 656 × 637 mm · 153 kg"
+      },
+      {
+        "label": "Power",
+        "value": "100–120 VAC, 50–60 Hz, 13.5 A, 1 phase; or 220–240 VAC, 50–60 Hz, 7 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, EAC, RCM, R-NZ"
+      }
+    ],
+    "applications_image": "/assets/stratasys/nail-polish-packaging.webp",
+    "applications_heading": "Colour-accurate models, sooner.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/air-purifier.webp",
+        "title": "Consumer products",
+        "text": "Fast PANTONE-validated prototypes."
+      },
+      {
+        "image": "/assets/stratasys/nail-polish-packaging.webp",
+        "title": "Packaging",
+        "text": "Transparent, high-fidelity packaging models."
+      },
+      {
+        "image": "/assets/stratasys/car-interior-3d-printed-product-parts.webp",
+        "title": "Automotive parts",
+        "text": "ABS-like durability for fit checks."
+      }
+    ],
+    "compare": [
+      "j850-prime",
+      "j55-prime",
+      "j35-pro"
+    ],
+    "form_options": [
+      "Design & colour models",
+      "Prototyping",
+      "Packaging"
+    ]
+  }
 }

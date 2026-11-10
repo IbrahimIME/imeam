@@ -10,5 +10,155 @@
   "image": "/assets/stratasys/j55-prime.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "J55 Prime Office Full-Colour PolyJet",
+    "description": "Stratasys J55 Prime 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/polyjet.mp4",
+    "category": "Office",
+    "eyebrow": "Stratasys J55 Prime · PolyJet",
+    "headline": "Possibilities",
+    "headline_em": "at every turn.",
+    "lead": "An office-friendly full-colour PolyJet printer: up to five materials, Pantone Verified colours, textures and transparency, quiet enough for the design studio.",
+    "spec_sheet": "https://www.stratasys.com/contentassets/828e880c492f4e089b2b440e47edc16f/br_pj_j55-prime_0625a.pdf",
+    "facts": [
+      {
+        "value": "1,174",
+        "label": "Print tray, cm²"
+      },
+      {
+        "value": "18",
+        "label": "Minimum layer, µm"
+      },
+      {
+        "value": "5",
+        "label": "Materials in one print"
+      },
+      {
+        "value": "640,000",
+        "label": "Colour combinations†"
+      }
+    ],
+    "footnote": "† Stratasys claim (“nearly 640,000”). Source: stratasys.com J55 Prime page, read 10 Nov 2026.",
+    "features_heading": "Colour, texture and clarity in the office.",
+    "features": [
+      {
+        "title": "Multi-material",
+        "text": "Tactile and sensory finishes in one print."
+      },
+      {
+        "title": "Texture",
+        "text": "Wood to fabric textures with less post-processing."
+      },
+      {
+        "title": "Colour",
+        "text": "Multi-colour finishes with Pantone Verified colours."
+      },
+      {
+        "title": "Clarity",
+        "text": "Transparent materials in a range of tints."
+      },
+      {
+        "title": "Quiet and odour-free",
+        "text": "Under 53 dB with the ProAero air extractor (Stratasys claim)."
+      }
+    ],
+    "feature_image": "/assets/stratasys/j55-prime.webp",
+    "feature_image_alt": "Stratasys J55 Prime",
+    "feature_caption": "J55 Prime · Stratasys",
+    "benefits": [
+      {
+        "title": "Office-friendly",
+        "text": "No dedicated lab needed."
+      },
+      {
+        "title": "High capacity",
+        "text": "A large rotating tray for its footprint."
+      },
+      {
+        "title": "Easy to use",
+        "text": "Design, import, print."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "Round print tray up to 1,174 cm²; print height 190 mm"
+      },
+      {
+        "label": "Layer thickness",
+        "value": "Down to 18 µm (HQS mode 18.75 µm)"
+      },
+      {
+        "label": "Accuracy",
+        "value": "Under 100 mm: ±150 µm. Over 100 mm: ±0.15 % of part length (rigid materials, 1σ)"
+      },
+      {
+        "label": "Materials",
+        "value": "ToughONE, Vero, VeroVivid, VeroUltra, VeroUltra Clear, Elastico, Digital ABS Plus, DraftGrey"
+      },
+      {
+        "label": "Support",
+        "value": "SUP710S, WSS150 (water-soluble)"
+      },
+      {
+        "label": "Materials on board",
+        "value": "Up to 5 simultaneously"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, SDK (API)"
+      },
+      {
+        "label": "Network",
+        "value": "LAN, TCP/IP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "651 × 661 × 1,511 mm · 228 kg"
+      },
+      {
+        "label": "Power",
+        "value": "100–240 VAC, 50–60 Hz, 10 A, 1 phase"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "18–25 °C, 30–70 % RH non-condensing"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE, FCC, EAC, cTUVus, CB, RCM"
+      }
+    ],
+    "applications_image": "/assets/stratasys/microsoft-laptop-prototype.webp",
+    "applications_heading": "Realistic design models at your desk.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/nail-polish-packaging.webp",
+        "title": "Packaging",
+        "text": "Packaging prototypes."
+      },
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Concept-to-test iteration."
+      },
+      {
+        "image": "/assets/stratasys/microsoft-laptop-prototype.webp",
+        "title": "Design",
+        "text": "Realistic product and design models."
+      }
+    ],
+    "compare": [
+      "j35-pro",
+      "j826-prime",
+      "j850-prime"
+    ],
+    "form_options": [
+      "Design & colour models",
+      "Prototyping",
+      "Education"
+    ]
+  }
 }

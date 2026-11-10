@@ -10,5 +10,153 @@
   "image": "/assets/stratasys/f370.webp",
   "image_alt": "",
   "new": false,
-  "draft": false
+  "draft": false,
+  "page": {
+    "enabled": true,
+    "page_title": "F170 and F370 Office FDM (F123 Series)",
+    "description": "Stratasys F170 · F370 3D printer from IME Additive Manufacturing, Malaysia: specifications, applications and pricing.",
+    "video": "/assets/video/fdm.mp4",
+    "category": "Office",
+    "eyebrow": "Stratasys F170 · F370 · F123 Series FDM",
+    "headline": "Reliable. Repeatable.",
+    "headline_em": "Exceptional.",
+    "lead": "Professional FDM for the office, classroom or shop floor: soluble support, a front material drawer and GrabCAD Print, in two build sizes.",
+    "spec_sheet": "https://www.stratasys.com/siteassets/3d-printers/printer-catalog/fdm-printers/f123-series-printers/brochures/stratasys-F370-spec-sheet-0625a.pdf",
+    "facts": [
+      {
+        "value": "254×254×254",
+        "label": "F170 build, mm"
+      },
+      {
+        "value": "355×254×355",
+        "label": "F370 build, mm"
+      },
+      {
+        "value": "±0.200",
+        "label": "Accuracy, mm*"
+      },
+      {
+        "value": "UL 2904",
+        "label": "GREENGUARD certified†"
+      }
+    ],
+    "footnote": "* or ±0.002 mm/mm, whichever is greater. † With ABS or ASA model material and QSR support. Source: stratasys.com F170 and F370 pages, read 10 Nov 2026.",
+    "features_heading": "Easy enough for the classroom, capable enough for engineering.",
+    "features": [
+      {
+        "title": "Soluble support",
+        "text": "Parts with hidden cavities and internal channels."
+      },
+      {
+        "title": "Front material drawer",
+        "text": "Spools load from the front."
+      },
+      {
+        "title": "Front-panel interface",
+        "text": "Manage print jobs at the printer."
+      },
+      {
+        "title": "GrabCAD Print and Insight",
+        "text": "Prepare, queue and monitor jobs."
+      },
+      {
+        "title": "Office-friendly",
+        "text": "Quiet, GREENGUARD-certified operation with approved materials."
+      }
+    ],
+    "feature_image": "/assets/stratasys/f370.webp",
+    "feature_image_alt": "Stratasys F170 · F370",
+    "feature_caption": "F170 · F370 · Stratasys",
+    "benefits": [
+      {
+        "title": "Easy to use",
+        "text": "Simple to learn, operate and maintain."
+      },
+      {
+        "title": "Wide material range",
+        "text": "From PLA to carbon-fibre ABS and TPU."
+      },
+      {
+        "title": "Small footprint",
+        "text": "Fits an office, lab or shop floor."
+      }
+    ],
+    "specs": [
+      {
+        "label": "Build size",
+        "value": "F170: 254 × 254 × 254 mm · F370: 355 × 254 × 355 mm"
+      },
+      {
+        "label": "Material bays",
+        "value": "F170: 1 model + 1 support · F370: 2 model + 2 support"
+      },
+      {
+        "label": "Accuracy",
+        "value": "±0.200 mm or ±0.002 mm/mm, whichever is greater (95 % dimensional yield)"
+      },
+      {
+        "label": "Materials",
+        "value": "F170: PLA, ABS-M30, ABS-CF10, ASA, TPU 92A · F370 adds PC-ABS, ABS-ESD7 and Diran 410MF07"
+      },
+      {
+        "label": "Support",
+        "value": "Soluble support (SUP706 on F370); breakaway available"
+      },
+      {
+        "label": "Software",
+        "value": "GrabCAD Print, GrabCAD Print Pro; Insight on F370"
+      },
+      {
+        "label": "Network",
+        "value": "Wired 100BASE-T Ethernet (TCP/IP), RJ45; wireless-ready IEEE 802.11 b/g/n; WPA2-PSK and 802.1x EAP"
+      },
+      {
+        "label": "System size & weight",
+        "value": "1,626 × 864 × 711 mm · 227 kg with consumables"
+      },
+      {
+        "label": "Power",
+        "value": "100–132 V / 15 A or 200–240 V / 7 A, 50/60 Hz"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "15–30 °C, 30–70 % RH"
+      },
+      {
+        "label": "Compliance",
+        "value": "CE (low-voltage and EMC), FCC, EAC, cTUVus, KC, RoHS, WEEE, REACH, RCM"
+      }
+    ],
+    "applications_image": "/assets/stratasys/woman-finishing-3d-printed-fdm-part_-stratasys-direct.webp",
+    "applications_heading": "Everyday engineering parts, in-house.",
+    "applications_text": "Concept models, functional prototypes and shop-floor aids without outsourcing.",
+    "applications": [
+      {
+        "image": "/assets/stratasys/prototyping.webp",
+        "title": "Rapid prototyping",
+        "text": "Concept and functional prototypes."
+      },
+      {
+        "image": "/assets/stratasys/tool-handle-in-hands.webp",
+        "title": "Jigs and fixtures",
+        "text": "Workholding and manufacturing aids."
+      },
+      {
+        "image": "/assets/stratasys/woman-finishing-3d-printed-fdm-part_-stratasys-direct.webp",
+        "title": "Production parts",
+        "text": "Low-volume and bridge-to-production parts."
+      }
+    ],
+    "compare": [
+      "f370cr-f190cr",
+      "fortus-450mc",
+      "f770"
+    ],
+    "form_options": [
+      "Prototyping",
+      "Tooling, jigs & fixtures",
+      "Education",
+      "Production parts"
+    ]
+  }
 }
