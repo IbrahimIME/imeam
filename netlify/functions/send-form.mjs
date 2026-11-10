@@ -17,17 +17,18 @@
 import nodemailer from 'nodemailer';
 import { sendWhatsAppAlert } from '../lib/whatsapp.mjs';
 
+// form-name -> the form's name shown in the email
 const FORMS = {
-  enquiry: 'General enquiry',
-  'amic-visit': 'AMIC',
-  'software-licensing': 'Materialise software',
-  'printer-pricing': 'Printer pricing',
+  enquiry: 'Homepage enquiry form',
+  'amic-visit': 'AMIC visit form',
+  'software-licensing': 'Materialise software licensing form',
+  'printer-pricing': 'Printer pricing form',
 };
 const LABELS = {
   'inquiry-type': 'Enquiry type', name: 'Name', company: 'Company', email: 'Email',
-  phone: 'Phone / WhatsApp', interest: 'Interested in', message: 'Message', page: 'Page',
+  phone: 'Phone / WhatsApp', interest: 'Interested in', message: 'Message',
 };
-const SKIP = new Set(['form-name', 'bot-field', 'pdpa-consent']);
+const SKIP = new Set(['form-name', 'bot-field', 'pdpa-consent', 'page']); // the email shows the form's name, not the page
 const FILE_EXT = /\.(step|stp|stl|3mf|obj|iges|igs)$/i;
 const MAX_FIELDS = 40, MAX_VALUE = 5000, MAX_FILES = 3;
 
@@ -94,7 +95,7 @@ export default async (req) => {
   if (!/^[^\s@<>",;]+@[^\s@<>",;]+\.[^\s@<>",;]+$/.test(email)) return json(400, { ok: false, error: 'Please enter a valid email address' });
   if (fd.get('pdpa-consent') !== 'yes') return json(400, { ok: false, error: 'Please tick the consent box' });
 
-  const rows = [], attachments = [];
+  const rows = [['Form', FORMS[form]]], attachments = [];
   let total = 0;
   for (const [k, v] of fd) {
     if (SKIP.has(k)) continue;
@@ -116,7 +117,7 @@ export default async (req) => {
   }
 
   const data = Object.fromEntries([...fd].filter(([, v]) => typeof v === 'string'));
-  const type = oneLine(data['inquiry-type'] || FORMS[form], 100);
+  const type = oneLine(data['inquiry-type'] || FORMS[form].replace(/ form$/, ''), 100);
   const company = oneLine(data.company || '', 120);
   const subject = oneLine(`Website lead: ${type} from ${name}${company ? ` (${company})` : ''}`, 200);
 
