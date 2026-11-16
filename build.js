@@ -187,6 +187,19 @@ ${vid ? `<div class="res-video">${vid}</div>` : e.image ? `<figure class="res-co
   };
 }
 
+/* ---------- standalone pages (content/pages → <file name>.html, e.g. privacy-policy.html) ---------- */
+
+function standalonePage(e, markdown) {
+  const inner = `<h1 class="h2">${esc(e.title)}</h1>${e.updated ? `<p class="res-meta">Last updated ${esc(fmtDate(e.updated))}</p>` : ''}
+<div class="prose">${markdown(e.body, e.where)}</div>`;
+  return {
+    title: `${esc(e.title)} · IME Additive Manufacturing`,
+    description: esc(e.summary || e.title),
+    content: section('top', e.title, inner),
+    scripts: '',
+  };
+}
+
 /* ---------- materials ---------- */
 
 const techOf = (e, allowed = TECH) => {
@@ -332,6 +345,7 @@ async function main() {
   };
   for (const e of data.items) if (e.page) add(e.page, frame, detailPage(e, markdown));
   for (const p of data.printers) if (p.page) add(p.page, printerTpl, printerPage(p, data.printers));
+  for (const e of readEntries('pages', 'title')) if (!e.draft) add(`${e.slug}.html`, frame, standalonePage(e, markdown));
   for (const [file, [tpl, vars]] of Object.entries(pages)) {
     if (fs.existsSync(path.join(OUT, file))) throw new Error(`${file}: generated page would overwrite a page in site/`);
     fs.writeFileSync(path.join(OUT, file), fill(tpl, vars, file));

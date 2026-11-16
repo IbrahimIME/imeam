@@ -295,3 +295,17 @@ collections:
     summary: "{{title}} · {{date}}"
     sortable_fields: [date, title]
     fields: *fields
+
+  # Standalone pages: content/pages/<file>.json becomes <file>.html
+  - name: pages
+    label: Pages
+    delete: false
+    files:
+      - name: privacy-policy
+        label: Privacy Policy
+        file: content/pages/privacy-policy.json
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: updated, label: Last updated, widget: datetime, format: YYYY-MM-DD, date_format: DD MMM YYYY, time_format: false, required: false, hint: Shown under the title. Change it whenever the policy changes. }
+          - { name: summary, label: Search description, widget: text, required: false }
+          - { name: body, label: Policy text, widget: markdown }
