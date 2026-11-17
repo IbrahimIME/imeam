@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://3dprint.cadcam.com.my/sitemap.xml

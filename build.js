@@ -21,6 +21,7 @@ const OUT = path.join(ROOT, 'dist');
 const PARTIALS = path.join(ROOT, 'partials');
 const TEMPLATES = path.join(ROOT, 'templates');
 const CONTENT = path.join(ROOT, 'content');
+const SITE_ORIGIN = 'https://3dprint.cadcam.com.my';
 
 // Must match the collection folders in site/admin/config.yml
 const TYPES = [
@@ -329,6 +330,52 @@ function render(html, file, { items, materials, printers }) {
     .replace(/<site-footer\b[^>]*><\/site-footer>/g, () => fill(footer, shared('ime'), file));
 }
 
+// Canonicals and the XML sitemap use the same public, extensionless URLs.
+function publicUrl(file) {
+  const pathname = file === 'index.html' ? '/' : `/${file.replace(/\.html$/, '')}`;
+  return new URL(pathname, SITE_ORIGIN).href;
+}
+
+function addSearchMetadata(html, file) {
+  if (file === '404.html' || !/<\/head>/i.test(html)) return html;
+
+  const tags = [];
+  if (!/<link\b[^>]*\brel=["']canonical["']/i.test(html)) {
+    tags.push(`<link rel="canonical" href="${publicUrl(file)}">`);
+  }
+  if (file === 'index.html' && !/<script\b[^>]*\btype=["']application\/ld\+json["']/i.test(html)) {
+    // Legal entity and alternate name are already stated on the public site.
+    const organisation = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      '@id': `${SITE_ORIGIN}/#organisation`,
+      name: 'IME Trading Sdn. Bhd.',
+      alternateName: 'IME Additive Manufacturing',
+      url: `${SITE_ORIGIN}/`,
+    };
+    tags.push(`<script type="application/ld+json">${JSON.stringify(organisation)}</script>`);
+  }
+  return tags.length ? html.replace(/<\/head>/i, `  ${tags.join('\n  ')}\n</head>`) : html;
+}
+
+function writeSitemap() {
+  const urls = fs.readdirSync(OUT)
+    .filter(file => file.endsWith('.html') && file !== '404.html')
+    .filter(file => {
+      const html = fs.readFileSync(path.join(OUT, file), 'utf8');
+      return /<head\b/i.test(html) && !/<meta\b[^>]*\bnoindex\b/i.test(html);
+    })
+    .map(file => publicUrl(file))
+    .sort();
+  const xmlEscape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + urls.map(url => `  <url><loc>${xmlEscape(url)}</loc></url>`).join('\n')
+    + '\n</urlset>\n';
+  fs.writeFileSync(path.join(OUT, 'sitemap.xml'), xml);
+  console.log(`built sitemap.xml (${urls.length} URLs)`);
+}
+
 async function main() {
   const data = { items: loadResources(), materials: loadMaterials(), printers: loadPrinters() };
   const markdown = await markdownRenderer();
@@ -353,11 +400,12 @@ async function main() {
 
   for (const file of fs.readdirSync(OUT).filter(f => f.endsWith('.html'))) {
     const p = path.join(OUT, file);
-    const html = render(fs.readFileSync(p, 'utf8'), file, data);
+    const html = addSearchMetadata(render(fs.readFileSync(p, 'utf8'), file, data), file);
     if (/<site-[a-z]+\b/.test(html)) throw new Error(`${file}: unexpanded placeholder`);
     fs.writeFileSync(p, html);
     console.log(`built ${file}`);
   }
+  writeSitemap();
   console.log(`${data.items.length} resources, ${data.materials.length} materials, ${data.printers.length} printers`);
 }
 
