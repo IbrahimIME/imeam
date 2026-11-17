@@ -34,3 +34,66 @@
   from = "/printer.html"
   to = "/printer-f3300.html"
   status = 301
+
+
+# Legacy WordPress URLs with clear live equivalents (Nov 2026 site migration)
+# Keep obsolete admin, feed, search, and missing-asset URLs as 404s.
+[[redirects]]
+from = "/contact-us/"
+to = "/#contact"
+status = 301
+
+[[redirects]]
+from = "/precision-care-how-3d-printing-is-transforming-healthcare-in-malaysia/"
+to = "/blog-precision-care-how-3d-printing-is-transforming-healthcare-in-malaysia"
+status = 301
+
+[[redirects]]
+from = "/from-concept-to-reality-how-am-is-transforming-malaysian-manufacturing/"
+to = "/blog-from-concept-to-reality-how-am-is-transforming-malaysian-manufacturing"
+status = 301
+
+[[redirects]]
+from = "/3d-printed-car-grille/"
+to = "/blog-3d-printed-car-grille"
+status = 301
+
+[[redirects]]
+from = "/stratasys-3d-printing-secrets-7-tips-for-consistent-high-quality-parts/"
+to = "/blog-stratasys-3d-printing-secrets-7-tips-for-consistent-high-quality-parts"
+status = 301
+
+[[redirects]]
+from = "/on-demand-spare-parts-yes-with-the-right-printer/"
+to = "/blog-on-demand-spare-parts-yes-with-the-right-printer"
+status = 301
+
+[[redirects]]
+from = "/j35-vs-desktop-resin-3d-printers/"
+to = "/video-j35-vs-desktop-resin-3d-printers"
+status = 301
+
+[[redirects]]
+from = "/3d-printed-amplifier/"
+to = "/blog-3d-printed-amplifier"
+status = 301
+
+[[redirects]]
+from = "/stratasys-f770-3d-printer/"
+to = "/printer-f770"
+status = 301
+
+[[redirects]]
+from = "/j5-dentajet/"
+to = "/printer-dentajet-series"
+status = 301
+
+[[redirects]]
+from = "/materials-p3/"
+to = "/materials#p3"
+status = 301
+
+[[redirects]]
+from = "/materials-stereolithography/"
+to = "/materials#sla"
+status = 301
